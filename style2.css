@@ -13,17 +13,25 @@ body {
     height: 5000px;
     /*To test the nav functionality - we can change later*/
     position: relative;
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
     /*To remove the underline*/
-    color: inherit;
+    color: white;
 }
 
 ul {
     list-style: none;
     /*To remove bullet point*/
+}
+
+#logo {
+    display: inline-block;
+    /*This makes height works with inline.*/
+    margin-left: -20px;
+    margin-top: 20px;
 }
 
 #hero-image {
@@ -46,6 +54,7 @@ ul {
     padding: 10px 50px;
     color: white;
     position: fixed;
+    /* position: sticky; */
     /*To be stickly nav*/
     width: 100%;
     transition: all 0.5s;
@@ -54,11 +63,6 @@ ul {
 .header-scrolled {
     background-color: black;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-}
-
-.logo {
-    color: white;
-    font-size: x-large;
 }
 
 .links {
@@ -78,12 +82,12 @@ ul {
     text-decoration: underline;
 }
 
-li a:hover {
+.link-item a:hover {
     color: darkorange;
     cursor: pointer;
 }
 
-li a:active {
+.link-item a:active {
     color: red;
     text-decoration: underline;
 }
