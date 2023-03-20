@@ -1,0 +1,217 @@
+/* reference: https://www.youtube.com/watch?v=axQ7eN2oPu0 */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Roboto:wght@300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 5000px;
+    /*To test the nav functionality - we can change later*/
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    /*To remove the underline*/
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    /*To remove bullet point*/
+}
+
+#hero-image {
+    width: 100%;
+    /*To use for entire screen*/
+    height: 90vh;
+    object-fit: cover;
+    /*To use for aspect ratio*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.6)
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    color: white;
+    position: fixed;
+    /*To be stickly nav*/
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.header-scrolled {
+    background-color: black;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    color: white;
+    font-size: x-large;
+}
+
+.links {
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    /* Keiko: This fixed the issue of the different dimensions, such as phone device*/
+}
+
+.link {
+    color: white;
+    font-size: x-large;
+}
+
+.link-item a:visited {
+    color: purple;
+    text-decoration: underline;
+}
+
+li a:hover {
+    color: darkorange;
+    cursor: pointer;
+}
+
+li a:active {
+    color: red;
+    text-decoration: underline;
+}
+
+div h1 {
+    position: relative;
+    /*This makes outside of the shadow of background image */
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    line-height: 8rem;
+    padding-top: 15rem;
+}
+
+p.header-text {
+    position: relative;
+    /*This makes outside of the shadow of background image */
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
+
+a.detail-btn {
+    display: inline-block;
+    /*This makes height works with inline.*/
+    background-color: red;
+    position: relative;
+    /*This makes outside of the shadow of background image */
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    transition-duration: 0.4s;
+    margin-left: 40rem;
+    margin-top: 3rem;
+}
+
+a.detail-btn:hover {
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
+}
+
+.event-header {
+    padding-top: px;
+    position: relative;
+    text-align: center;
+}
+
+main .items {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row; /*This is default of flex */
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px; /*IE ends support so we can use */
+    padding-top: 300px;
+    padding-bottom: 50px;
+
+    /* 
+    flex-wrap: nowrap;  This is default.
+
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: center;
+    justify-content: flex-end;
+    justify-content: flex-start; 
+
+    align-items: flex-start; This is default.
+    align-items: flex-end;
+    align-items: center;
+
+    flex-direction: row; This is default of flex 
+    flex-direction: row-reverse;
+    flex-direction: colum;
+    flex-direction: colum-reverse;
+
+    flex-basis: ;
+    flex-grow: ;
+    flex-shrink: ;
+    */
+
+}
+
+main .item {
+    width: 300px;
+    height: 300px;
+}
+
+main .item01 {
+    background-color: red;
+}
+
+main .item02 {
+    background-color: blue;
+}
+
+main .item03 {
+    background-color: green;
+}
+
+aside .items {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /*This is default of flex */
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px; /*IE ends support so we can use */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+aside .items:nth-child(even) {
+    flex-direction: row-reverse;
+    background: rgb(146, 146, 231);
+}
+
+aside .item{
+    background: purple;
+    width: 40%;
+    height: 500px;
+}
+
+#asside-image1{
+width: 200px;
+height: 200px;
+}
+
