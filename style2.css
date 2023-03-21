@@ -57,6 +57,7 @@ ul {
     /* position: sticky; */
     /*To be stickly nav*/
     width: 100%;
+    z-index: 99999999;
     transition: all 0.5s;
 }
 
