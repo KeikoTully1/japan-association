@@ -135,20 +135,39 @@ a.detail-btn:hover {
     color: white;
 }
 
-.event-header {
-    padding-top: px;
+.member-btn {
+    display: inline-block;
+    /*This makes height works with inline.*/
+    background-color: red;
     position: relative;
+    /*This makes outside of the shadow of background image */
     text-align: center;
+    border-radius: 10px;
+    font-size: 0.2rem;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    transition-duration: 0.4s;
+
 }
 
-main .items {
+.event-header {
+    /* padding-top: 50px; */
+    position: relative;
+    text-align: center;
+    margin-top: 400px;
+}
+
+.event .card {
     display: flex;
     justify-content: space-around;
-    flex-direction: row; /*This is default of flex */
+    flex-direction: row;
+    /*This is default of flex */
     flex-wrap: wrap;
     align-items: center;
-    gap: 30px; /*IE ends support so we can use */
-    padding-top: 300px;
+    gap: 30px;
+    /*IE ends support so we can use */
+    padding-top: 80px;
     padding-bottom: 50px;
 
     /* 
@@ -176,47 +195,80 @@ main .items {
 
 }
 
-main .item {
+.event .item {
     width: 300px;
     height: 300px;
 }
 
-main .item01 {
+.event .item01 {
     background-color: red;
 }
 
-main .item02 {
+.event .item02 {
     background-color: blue;
 }
 
-main .item03 {
+.event .item03 {
     background-color: green;
 }
 
-aside .items {
+.award-header {
+    position: relative;
+    text-align: center;
+
+}
+
+.award .card {
     display: flex;
     justify-content: center;
-    flex-direction: row; /*This is default of flex */
+    flex-direction: row;
+    /*This is default of flex */
     flex-wrap: wrap;
     align-items: center;
-    gap: 30px; /*IE ends support so we can use */
+    gap: 30px;
+    /*IE ends support so we can use */
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-aside .items:nth-child(even) {
+.award .card:nth-child(even) {
     flex-direction: row-reverse;
-    background: rgb(146, 146, 231);
 }
 
-aside .item{
+.award .item {
     background: purple;
     width: 40%;
     height: 500px;
 }
 
-#asside-image1{
-width: 200px;
-height: 200px;
+#asside-image1 {
+    width: 200px;
+    height: 200px;
 }
+
+.second-hero {
+
+    background-image: url(https://images.unsplash.com/photo-1533038590840-1cde6e668a91?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80); 
+    height: 600px;
+    background-position: center;
+    background-size: 90%;
+    /* background-position-x: -100px; */
+
+}
+
+/*  DECORATIVE IMAGES */
+.about-us #about-us-title {
+
+    position: relative;
+    text-align: center;
+    color: black;
+  }
+  
+  header h1 {
+    text-align: center;
+    padding-top: 160px;
+    font-size: 60px;
+    color: #FFFA00;
+    font-family: sans-serif; 
+  }
 
