@@ -1,417 +1,429 @@
+/* reference: https://www.youtube.com/watch?v=axQ7eN2oPu0 */
 
 
 
-/* USE THESE COLORS */
-/* https://coolors.co/606c38-283618-fefae0-dda15e-bc6c25 */
-
-/* CSS HEX */
---dark-moss-green: #606c38ff;
---pakistan-green: #283618ff;
---cornsilk: #fefae0ff;
---earth-yellow: #dda15eff;
---tigers-eye: #bc6c25ff;
-
-
-
-/* SCSS RGB */
-$dark-moss-green: rgba(96, 108, 56, 1);
-$pakistan-green: rgba(40, 54, 24, 1);
-$cornsilk: rgba(254, 250, 224, 1);
-$earth-yellow: rgba(221, 161, 94, 1);
-$tigers-eye: rgba(188, 108, 37, 1);
-
-/* SCSS Gradient */
-$gradient-top: linear-gradient(0deg, #606c38ff, #283618ff, #fefae0ff, #dda15eff, #bc6c25ff);
-$gradient-right: linear-gradient(90deg, #606c38ff, #283618ff, #fefae0ff, #dda15eff, #bc6c25ff);
-$gradient-bottom: linear-gradient(180deg, #606c38ff, #283618ff, #fefae0ff, #dda15eff, #bc6c25ff);
-$gradient-left: linear-gradient(270deg, #606c38ff, #283618ff, #fefae0ff, #dda15eff, #bc6c25ff);
-$gradient-top-right: linear-gradient(45deg, #606c38ff, #283618ff, #fefae0ff, #dda15eff, #bc6c25ff);
-$gradient-bottom-right: linear-gradient(135deg, #606c38ff, #283618ff, #fefae0ff, #dda15eff, #bc6c25ff);
-$gradient-top-left: linear-gradient(225deg, #606c38ff, #283618ff, #fefae0ff, #dda15eff, #bc6c25ff);
-$gradient-bottom-left: linear-gradient(315deg, #606c38ff, #283618ff, #fefae0ff, #dda15eff, #bc6c25ff);
-$gradient-radial: radial-gradient(#606c38ff, #283618ff, #fefae0ff, #dda15eff, #bc6c25ff);
-
-/* Base Styles  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Roboto:wght@300;400&display=swap');
 
 * {
-    box-sizing: border-box;
-    padding:0;
+    padding: 0;
     margin: 0;
-  }
-  
-  /*  STEP 1: add a base font-size to the body element 
-  hint: use "font-size" property */
-  
-  html {
-    font-size: 10px;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-  }
-  
-  /* Add margins to the body so that the content 
-    doesn't reach the edges of the view screen
-    hint: margin-left and right should be 'auto'
-    margin-top and bottom can be zero */
-  
-  body {
-    height: 100%; max-height: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  
-  /* logo styling
-  1. Style the logo so that the text sits next to the image 
-  (hint: use flexbox styling for this)
-  2. apply some style to the logo text
-  3. apply margins or padding to the logo to position it */
-  
-  .logo {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    padding-top: 1%;
-  }
-  
-  .logo p{
-    display: flex;
-    flex: 1;
-    align-items: center;
-    font-family: fantasy;
-    font-style: italic;
-    font-size: 2.5rem;
-  } 
-  
-  .red{
-    color: rgb(105, 29, 34);
-  }
-  
-  .orange{
-     color: rgb(255, 128, 0);
-  }
-  
-  .green{
-    color: rgb(0, 153, 51);
-  }
-  
-  /* STYLE THE NAV BAR! */
-  /* 
-   1. use flexbox to make the navigation bar contents 
-    display horizontally. Make the nav a flex container.
-    2. adjust styling with colors! background colors,
-    text colors, etc. Look at my example for an idea
-    of ways to do this.
-   */
-  
-  nav {
-    display: flex;
-    flex: 2;
-    flex-wrap: wrap; /* Keiko: This fixed the issue of the different dimensions, such as phone device*/
-    align-items: center;
-    justify-content: space-evenly;
-    background-color:hsla(52, 94%, 94%, 1);
-  }
+}
 
-  /* Link List Styling:
-  1. Make the ul a flex container so that the list items
-  inside of it display horizontally
-  2. remove the bullet point of the list items
-    */
-  
-  nav ul {
-    display: flex;
-    flex: 2;
-    justify-content: flex-end;
-    list-style: none;
-  }
-  
-  /* Style the list items
-  1. adjust the font size (use rem units)
-  2. add padding to give the links some space 
-   */
-  
-  nav ul li {
-    font-size: 2.5rem;
-    padding: 10px;
-  }
-  
-  /* Adjust the style of the navigation links */
-  /* 1. Remove the underline for the links 
-     2. Change the colors from black to something els
-     3. add margins so the links are easy to read
-     4. adjust the font styling (bold, font size, etc)
-     */
-  
-  li a {
+body {
+    /* height: 5000px; */
+    /*To test the nav functionality - we can change later*/
+    position: relative;
+    overflow-x: hidden;
+}
+
+a {
     text-decoration: none;
-    color: rgb(255, 128, 0);
-    margin-right: 10px;
-    font-weight: bold;
-  }
-  
-  /* Alter the colors here for links that have been visited,
-  are unvisited, are being clicked on, and are being hovered
-  over. */
-  
-  li a:visited {
+    /*To remove the underline*/
+    color: white;
+}
+
+ul {
+    list-style: none;
+    /*To remove bullet point*/
+}
+
+#logo {
+    display: inline-block;
+    /*This makes height works with inline.*/
+    margin-left: -20px;
+    margin-top: 20px;
+}
+
+#hero-image {
+    width: 100%;
+    /*To use for entire screen*/
+    height: 90vh;
+    object-fit: cover;
+    /*To use for aspect ratio*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.6)
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    color: white;
+    position: fixed;
+    /* position: sticky; */
+    /*To be stickly nav*/
+    width: 100%;
+    z-index: 99999999;
+    transition: all 0.5s;
+}
+
+.header-scrolled {
+    background-color: black;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.links {
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    /* Keiko: This fixed the issue of the different dimensions, such as phone device*/
+}
+
+.link {
+    color: white;
+    font-size: x-large;
+}
+
+.link-item a:visited {
     color: purple;
     text-decoration: underline;
-  }
-  
-  li a:hover {
-    color:darkorange;
-    cursor:pointer;
-  }
-  
-  li a:active {
+}
+
+.link-item a:hover {
+    color: darkorange;
+    cursor: pointer;
+}
+
+.link-item a:active {
     color: red;
     text-decoration: underline;
-  }
-  
-  /* Style the header 
-      1. center the header text (text-align property)
-      2. give the header section enough height to show the 
-      background image   
-        */
-  
-  /* Keiko: Background-image opacity without affecting text
-  reference: https://coder-coder.com/background-image-opacity/ */
-  
-  header {
+}
+
+div h1 {
     position: relative;
-    display: flex;
-    background-image: url("/images/kinkakuji2.jpg");
-    background-size: cover;
-    align-items: center;
-    justify-content: center;
-    width: 100%;  /* To fill the page*/
-    height: 100vh; /* To fill the page*/
-    /* height: 1000px; */
-    object-fit: cover;  /* To keep the object ratio*/
-    background-position: center center;
-    /* background-position: top left; one value is x value */
-  }
-
-
-  header::before{
-    position: absolute;
-    content:"";
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(0, 0, 0, .3);
-  }
-  
-  /* Make sure the header text is visible against the 
-  background image.
-  1. apply a font color
-  2. use some kind of background color 
-  behind the text if the 
-  text is hard to read. */
-  
-  header h1 {
-    position:relative;
+    /*This makes outside of the shadow of background image */
     color: white;
+    font-size: 3rem;
     text-align: center;
-    font-size: 10rem;
-  }
+    line-height: 8rem;
+    padding-top: 15rem;
+}
 
-  /* https://youtu.be/Os9kYg6PF-8  checkthis for center text */
+p.header-text {
+    position: relative;
+    /*This makes outside of the shadow of background image */
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
 
-  
-  /* MAIN STYLING
-  * * * * * * * *  */
-  /* Make the recipe steps easier to read */
-  /* 1. make the content centered on the page.
-     2. adjust the font-size, line-height, or other 
-     text properties for readability. */
-  
-  main {
-    max-width: 830px;
-    font-size: 2rem;
-    line-height:120%
-  }
-  
-  
-  h3{
-    color: brown;
-    text-align: left;
-    text-decoration: underline;
-    line-height: 150%; /* Keiko: This fixed the issue of wrapping no text height issue in dimesion change, such as phone*/
-  }
-  
-  ol {
-    margin-left: 50px;
-    margin-right:20px;
-    }
-  
-  /* Make the top "recipe summary" section stand out in some way.
-  For example, change the style of the text to be different
-  from other text on the page.
-  1. adjust the font-size
-  2. add padding and/or margins to make the text easy to read
-  3. adjust font styles, for example font-style: italic 
-   */
-  
-  .recipe-summary {
-    padding: 5%;
-  }
-  
-  .recipe-summary p {
-    font-size: 2rem;  
-    font-style: italic;
-  }
-  
-  /* Style the "Skip to Recipe Button */
-  /* This button should stand out. Most users of the 
-  site just want the recipe, and will be clicking this button.
-  1. give the button a contrasting text color (color) and background color
-  (background-color)
-  2. add a border-radius to make it look like a button
-  3. remove the underline from the link
-  4. add some padding so that the button text doesn't touch the 
-  button's border.
-   */
-  
-   /* Keiko button, hover reference: https://www.w3schools.com/css/css3_buttons.asp */
-  a.detail-btn {
+}
+
+a.detail-btn {
+    display: inline-block;
+    /*This makes height works with inline.*/
     background-color: red;
-    position:relative;  /*This makes outside of the shadow of background image */
+    position: relative;
+    /*This makes outside of the shadow of background image */
     text-align: center;
     border-radius: 10px;
-    font-size: x-large;
+    font-size: 1.5rem;
     text-decoration: none;
     padding: 20px;
     color: white;
     transition-duration: 0.4s;
-    width: 4rem;
-    margin-left: 50rem;
-  }
+    margin-left: 40rem;
+    margin-top: 3rem;
+}
 
-  p.header-text{
-    position:relative;  /*This makes outside of the shadow of background image */
-    color:white;
-    font-size: 3rem;
-    text-align: center;
-    margin-top: -3rem;
-    line-height: 10rem;
-    
-  }
-
-  .detail-btn:hover {
-    background-color: #4CAF50; /* Green */
+a.detail-btn:hover {
+    background-color: #4CAF50;
+    /* Green */
     color: white;
-  }
-  
-  /*  STYLE THE BLOG TEXT
-  1. adjust the line height to make this section's 
-  text easier to read
-  2. adjust the padding so that the text never sits 
-  right against the edge of the screen at any screen size
-  3. make any other style adjustments you want for 
-  readability*/
-  
-  .blog p {
-    line-height: 130%;
+}
+
+.member-btn {
+    display: inline-block;
+    /*This makes height works with inline.*/
+    background-color: red;
+    position: relative;
+    /*This makes outside of the shadow of background image */
+    text-align: center;
+    border-radius: 10px;
+    font-size: 0.2rem;
+    text-decoration: none;
     padding: 10px;
-    max-width: 700px;
-    font-size: 1.8rem;
-    margin-left: 8%;
-  
-  }
-  
-  /* STYLE THE RECIPE SECTION */
-  /* Make the recipe section stand out
-    1. give it a background color, but make sure 
-    it is still readable
-    (hint: make the color semi transparent) 
-    2. Add some type of border style to the recipe section 
-    3. adjust font styles 
-    4. adjust padding to make content in this section easier
-    to read 
-    5. create a bottom margin between this section and the footer*/
-  
-  .current-recipe {
-    background-color: rgba(230, 131, 98, .3);
-    border:rgb(255, 128, 0) .5rem;
-    border-style: double;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    padding-left: 10px;
-    /* Keiko: Issue with responsive design 3/3/23:
-    This width is to match the footer below on the right side.
-    However, it seems that bigger width broke the different dimension such as phone.
-    Creating the holizontal scroll bar.
-  
-    Update from the teacher 3/4/23:
-    Setting a max-width on your html elements allows their width to adjust to smaller screen sizes. 
-    ...another tool, known as "media queries," that allow us to specifically target styling for smaller screen sizes.
-    I hope to generally cover responsive design (designing for all screen sizes) 
-    
-    
-    --> The issue resolved! 3/4/23:
-    I updated by width with % percentage instead of specify to px.
-    Reference: https://www.w3schools.com/css/css_rwd_viewport.asp
-  
-    3. Use CSS media queries to apply different styling for small and large screens 
-    - Setting large absolute CSS widths for page elements will cause the element to be too wide for the viewport on a smaller device. 
-    Instead, consider using relative width values, such as width: 100%. Also, be careful of using large absolute positioning values. It may cause the element to fall outside the viewport on small devices.
-    */
-    width: 100%;
-  }
-  
-  h2 { 
+    color: white;
+    transition-duration: 0.4s;
+
+}
+
+.section-header {
+    position: relative;
     text-align: center;
-    text-decoration: underline;
-    
-  }
-  
-   .cook-time {
-    text-align: center;
-  }
-  
-  /* Add a frame around the recipe image 
-    1. create the frame with a border
-      hint, use the "border" property with 3 values, 
-      i.e. 'border: 1px solid black;' 
-  
-    2. adjust the distance from the frame to the 
-    image using padding. */
-  
-  .current-recipe img {
-    max-width: 450px;
-    border:rgb(255, 128, 0) solid 5px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
-  
-  figcaption{
-    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 3rem;
+    font-size: xx-large
+}
+
+.event .card,
+.blog .card {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    /*This is default of flex */
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    /*IE ends support so we can use */
+    padding-bottom: 50px;
     padding-top: 30px;
-    font-style: italic;
-    font-size: large;
-    
-  }
-  
-  /* Style the footer content
-  1. give it a text and background color with good contrast
-  2. center the text 
-  3. give the footer some height
-  4. use padding or margins to make the text readable
-  5. adjust the font-size  */
-  footer {
-    background-color: rgba(18, 155, 183, .3);
-    color:rgb(92, 81, 81);
-    font-size: 2rem;
+
+    /* 
+    flex-wrap: nowrap;  This is default.
+
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: center;
+    justify-content: flex-end;
+    justify-content: flex-start; 
+
+    align-items: flex-start; This is default.
+    align-items: flex-end;
+    align-items: center;
+
+    flex-direction: row; This is default of flex 
+    flex-direction: row-reverse;
+    flex-direction: colum;
+    flex-direction: colum-reverse;
+
+    flex-basis: ;
+    flex-grow: ;
+    flex-shrink: ;
+    */
+
+}
+
+.event .item {
+    width: 300px;
+    height: 300px;
+}
+
+.event .item01 {
+    background-color: red;
+}
+
+.event .item02 {
+    background-color: blue;
+}
+
+.event .item03 {
+    background-color: green;
+}
+
+.award-header {
+    position: relative;
     text-align: center;
-    line-height: 130%;
-    font-style: italic;
-    margin-bottom: 30px;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    /* Adding 100% in width makes better in responsive design (other devices)but there is a gap in my apple laptop.*/
+
+}
+
+.award .card {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /*This is default of flex */
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    /*IE ends support so we can use */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.award .card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.award .item {
+    background: purple;
+    width: 40%;
+    height: 500px;
+}
+
+#asside-image1 {
+    width: 200px;
+    height: 200px;
+}
+
+
+/* reference https://www.w3schools.com/howto/howto_css_newsletter.asp */
+
+.fc-form {
+    display: flex;
+}
+
+.subscribe-text,
+.fields {
+    flex: 2;
+}
+
+.form-btn {
+    flex: 1;
+}
+
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+.container {
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+input[type=text],
+input[type=submit] {
     width: 100%;
-  }
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    margin-top: 16px;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+
+@media (min-width: 300px) {
+    p {
+        font-size: 0.25rem;
+    }
+
+    .header {
+        font-size: 1rem;
+    }
+
+    #hero-image {
+        width: 100%;
+        height: 30vh;
+
+    }
+
+    #logo {
+
+        display: inline-block;
+        /*This makes height works with inline.*/
+        margin-left: -40px;
+        margin-top: 1px;
+        width: 5%;
+
+    }
+
+    .link {
+        font-size: x-small;
+    }
+
+}
+
+@media (min-width: 600px) {
+    p {
+        font-size: 1.25rem;
+    }
+
+    .header {
+        font-size: 1.25rem;
+    }
+
+    #hero-image {
+        width: 100%;
+        height: 50vh;
+
+    }
+
+    .link {
+        font-size: x-large;
+    }
+
+}
+
+@media (min-width: 800px) {
+    p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .header {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    #hero-image {
+        height: 70vh;
+
+    }
+}
+
+
+@media (min-width: 1000px) {
+    p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .header {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    #hero-image {
+        height: 60vh;
+
+    }
+}
+
+
+
+.footer-fc {
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    /*This is default of flex */
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    /*IE ends support so we can use */
+    padding-bottom: 50px;
+    padding-top: 30px;
+    background-color: #2a8ded;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+#footer-ul li a {
+    color: black;
+    text-decoration: none;
+
+}
+
+#footer-ul li a:hover {
+    color: #2a8ded;
+}
+
+.footer-contact {
+    font-size: medium;
+}
