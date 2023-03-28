@@ -292,7 +292,6 @@ a.event-title-link:active {
 
 .award .card {
     display: flex;
-    justify-content: center;
     flex-direction: row;
     /*This is default of flex */
     flex-wrap: wrap;
@@ -307,15 +306,16 @@ a.event-title-link:active {
     flex-direction: row-reverse;
 }
 
-.award .item {
-    background: purple;
+/* .award .item {
+    background: yellow;
     width: 40%;
     height: 500px;
-}
+} */
 
-#asside-image1 {
-    width: 200px;
-    height: 200px;
+
+#award-image1 {
+    width: 70%;
+    height: auto;
 }
 
 
