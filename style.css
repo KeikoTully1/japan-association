@@ -180,7 +180,7 @@ a.detail-btn:hover {
 .event .card,
 .blog .card {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row;
     /*This is default of flex */
     flex-wrap: wrap;
@@ -188,7 +188,7 @@ a.detail-btn:hover {
     gap: 30px;
     /*IE ends support so we can use */
     padding-bottom: 50px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
 
     /* 
     flex-wrap: nowrap;  This is default.
@@ -216,13 +216,41 @@ a.detail-btn:hover {
 }
 
 .event .item {
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 100%;
+    
 }
 
-.event .item01 {
-    background-color: red;
+.event-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+ .fc-event {
+    display: flex;
+ }
+
+.fc-event a.event-btn {
+
+    font-size: 1rem;
+    padding: 5px;
+
+    /* display: inline-block; */
+    background-color: red;
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    transition-duration: 0.4s;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+
+
 
 .event .item02 {
     background-color: blue;
@@ -236,6 +264,22 @@ a.detail-btn:hover {
     position: relative;
     text-align: center;
 
+}
+
+.second-hero {
+    width: 100%;
+    height: auto;
+}
+
+.fc-about-us {
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 30px;
+}
+
+#paragraph {
+    margin: 50px;
 }
 
 .award .card {
@@ -371,6 +415,57 @@ input[type=submit]:hover {
     font-size: medium;
 }
 
+
+.event-header {
+    color: black;
+    font-size: xx-large;
+    padding-top: 550px;
+}
+
+.event-info {
+    font-size:x-large;
+    margin-left: 30px;
+    line-height: 30px;
+ 
+}
+
+strong {
+    color: red;
+}
+
+.event-paragrah {
+
+    max-width: 1000px;
+    font-size: 10px;
+    margin: 0 auto;
+    margin-top: -170px;
+    
+}
+
+a.rsvp-btn {
+    display: inline-block;
+    /*This makes height works with inline.*/
+    background-color: red;
+    position: relative;
+    /*This makes outside of the shadow of background image */
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    transition-duration: 0.4s;
+    margin-left: 25px;
+    margin-top: 5px;
+    
+}
+
+a.rsvp-btn:hover {
+    background-color: #4CAF50;
+    /* Green */
+    color: white;
+}
+
 /* Small devices */
 @media (max-width: 600px) {
     p {
@@ -391,6 +486,10 @@ input[type=submit]:hover {
         font-size: x-large;
     }
 
+    .event-paragrah {
+
+    }
+
 }
 
 /* Medium/Tablets */
@@ -407,7 +506,10 @@ input[type=submit]:hover {
 
     #hero-image {
         height: 70vh;
+    }
 
+    .event-paragrah {
+        
     }
 }
 
@@ -425,9 +527,13 @@ input[type=submit]:hover {
 
     #hero-image {
         height: 60vh;
+    }
 
+    .event-paragrah {
+        
     }
 }
+
 
 /******************************************
 /* ADDITIONAL STYLES
