@@ -144,7 +144,7 @@ a.detail-btn {
     transition-duration: 0.4s;
     margin-left: 900px;
     margin-top: 3rem;
-    
+
 }
 
 a.detail-btn:hover {
@@ -215,10 +215,28 @@ a.detail-btn:hover {
 
 }
 
+.event-title-link {
+    color: black;
+}
+
+a.event-title-link:visited {
+    color: purple;
+    text-decoration: underline;
+}
+
+a.event-title-link:hover {
+    color: darkorange;
+    cursor: pointer;
+}
+
+a.event-title-link:active {
+    color: red;
+    text-decoration: underline;
+}
+
 .event .item {
     width: 500px;
     height: 100%;
-    
 }
 
 .event-image {
@@ -227,9 +245,10 @@ a.detail-btn:hover {
     height: 100%;
     object-fit: cover;
 }
- .fc-event {
+
+.fc-event {
     display: flex;
- }
+}
 
 .fc-event a.event-btn {
 
@@ -247,17 +266,6 @@ a.detail-btn:hover {
     transition-duration: 0.4s;
     margin-left: 25px;
     margin-top: 5px;
-}
-
-
-
-
-.event .item02 {
-    background-color: blue;
-}
-
-.event .item03 {
-    background-color: green;
 }
 
 .award-header {
@@ -363,17 +371,17 @@ input[type=submit]:hover {
 
 
 
-    #logo {
+#logo {
 
-        display: inline-block;
-        /*This makes height works with inline.*/
-        margin-left: -40px;
-        margin-top: 1px;
-        width: 5%;
+    display: inline-block;
+    /*This makes height works with inline.*/
+    margin-left: -40px;
+    margin-top: 1px;
+    width: 5%;
 
-    }
+}
 
-    /* .link {
+/* .link {
         font-size: x-small;
     } */
 
@@ -423,10 +431,10 @@ input[type=submit]:hover {
 }
 
 .event-info {
-    font-size:x-large;
+    font-size: x-large;
     margin-left: 30px;
     line-height: 30px;
- 
+
 }
 
 strong {
@@ -439,7 +447,7 @@ strong {
     font-size: 10px;
     margin: 0 auto;
     margin-top: -170px;
-    
+
 }
 
 a.rsvp-btn {
@@ -457,7 +465,7 @@ a.rsvp-btn {
     transition-duration: 0.4s;
     margin-left: 25px;
     margin-top: 5px;
-    
+
 }
 
 a.rsvp-btn:hover {
@@ -486,9 +494,7 @@ a.rsvp-btn:hover {
         font-size: x-large;
     }
 
-    .event-paragrah {
-
-    }
+    .event-paragrah {}
 
 }
 
@@ -508,9 +514,7 @@ a.rsvp-btn:hover {
         height: 70vh;
     }
 
-    .event-paragrah {
-        
-    }
+    .event-paragrah {}
 }
 
 /* Large */
@@ -529,9 +533,7 @@ a.rsvp-btn:hover {
         height: 60vh;
     }
 
-    .event-paragrah {
-        
-    }
+    .event-paragrah {}
 }
 
 
