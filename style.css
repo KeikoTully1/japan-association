@@ -71,7 +71,7 @@ img.image-top {
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 10px 50px;
     color: white;
     position: fixed;
@@ -83,7 +83,7 @@ img.image-top {
 }
 
 .header-scrolled {
-    background-color: black;
+    background-color: rgb(6, 57, 226);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -91,7 +91,6 @@ img.image-top {
     display: flex;
     column-gap: 30px;
     flex-wrap: wrap;
-    /* Keiko: This fixed the issue of the different dimensions, such as phone device*/
 }
 
 .link {
@@ -99,14 +98,14 @@ img.image-top {
     font-size: x-large;
 }
 
-.link-item a:visited {
+/* .link-item a:visited {
     color: purple;
-    text-decoration: underline;
-}
+} */
 
 .link-item a:hover {
     color: darkorange;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 .link-item a:active {
@@ -159,28 +158,12 @@ a.detail-btn:hover {
     color: white;
 }
 
-.member-btn {
-    display: inline-block;
-    /*This makes height works with inline.*/
-    background-color: red;
-    position: relative;
-    /*This makes outside of the shadow of background image */
-    text-align: center;
-    border-radius: 10px;
-    font-size: 0.2rem;
-    text-decoration: none;
-    padding: 10px;
-    color: white;
-    transition-duration: 0.4s;
-
-}
-
 .section-header {
     position: relative;
     text-align: center;
     margin-top: 90px;
     margin-bottom: 3rem;
-    font-size: xx-large
+    font-size: xx-large;
 }
 
 .event .card,
@@ -386,6 +369,7 @@ input[type=submit] {
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: x-large;
 }
 
 input[type=checkbox] {
@@ -409,8 +393,9 @@ input[type=submit]:hover {
 
     display: inline-block;
     /*This makes height works with inline.*/
-    margin-left: -40px;
-    margin-top: 1px;
+    margin-left: -20px;
+    margin-top: 10px;
+    padding-right: 20px;
     width: 5%;
 
 }
@@ -428,10 +413,10 @@ input[type=submit]:hover {
     flex-wrap: wrap;
     align-items: center;
     gap: 30px;
-    /*IE ends support so we can use */
     padding-bottom: 50px;
     padding-top: 30px;
-    background-color: #2a8ded;
+    background-color: rgb(6, 57, 226);
+    color: white;
 }
 
 .column {
@@ -444,17 +429,17 @@ input[type=submit]:hover {
 }
 
 #footer-ul li a {
-    color: black;
-    text-decoration: none;
+    color: white
 
 }
 
 #footer-ul li a:hover {
-    color: #2a8ded;
+    color: red;
+    text-decoration: underline;
 }
 
 .footer-contact {
-    font-size: medium;
+    font-size: large;
 }
 
 
@@ -524,9 +509,9 @@ a.rsvp-btn:hover {
 
     }
 
-    .link {
-        font-size: x-large;
-    }
+    /* .link {
+        font-size: medium;
+    } */
 
     .event-paragrah {}
 

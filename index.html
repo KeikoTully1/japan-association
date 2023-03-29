@@ -10,49 +10,52 @@
     <script defer src="script.js"></script>
 </head>
 
-<body>
+<body id="home-top">
     <img id="hero-image" src="https://cdn.pixabay.com/photo/2016/11/14/03/43/kimono-1822520_960_720.jpg"
         alt="Japanese Traditional Building called Kinkakuji">
     <header class="header">
-        <img id="logo" src="images/Koifish-blue.png" alt="Japan Assoication Logo with Koifish drawing" width="100px">
+        <img id="logo" src="images/Koifish-blue.png" alt="Japan Assoication Logo with beautiful Koifish drawing"
+            width="100px">
         <ul class="links">
             <li class="link-item">
-                <a href="#home" class="link">HOME</a>
+                <a href="#home-top" class="link">HOME</a>
             </li>
             <li class="link-item">
-                <a href="#events" class="link">EVENTS</a>
+                <a href="#events-top" class="link">EVENTS</a>
             </li>
             <li class="link-item">
-                <a href="#about-us" class="link">ABOUT US</a>
+                <a href="#about-us-top" class="link">ABOUT US</a>
             </li>
             <li class="link-item">
-                <a href="#award" class="link">AWARD</a>
+                <a href="#award-top" class="link">AWARD</a>
             </li>
             <li class="link-item member-btn">
-                <a href="membership.html" class="link">Become a member</a>
+                <a href="#email-form-top" class="link">MEMBERSHIP</a>
             </li>
         </ul>
     </header>
     <div class="hero-text">
         <h1>Learning Japan Together</h1>
-        <p class="header-text">We can discover the cultural new perspective. We can discover the cultural new
-            perspective</p>
-        <a class="detail-btn" href="#recipe-btn">Details here</a>
+        <p class="header-text">Looking for a welcoming environment to learn about Japanese language and
+            culture?</p>
+        <a class="detail-btn" href="#about-us-top">Details here</a>
     </div>
     <main>
-        <section class="event">
+        <section class="event" id="events-top">
             <h1 class="section-header">Upcoming Events</h1>
             <div class="card">
                 <div class="item item01">
                     <figure>
                         <div class="event-image-container">
-                            <img class="event-image" src="images/kinkakuji2.jpg" alt="image" width="">
+                            <img class="event-image"
+                                src="https://images.unsplash.com/photo-1653997412308-308d945f687b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+                                alt="image" width="">
                         </div>
                         <div class="fc-event">
                             <ul class="event-ul">
                                 <li>
                                     <h2><a class="event-title-link" href="event1.html#event1-top">Learning Japanese
-                                            Architecture - Kinkakuji</a></h2>
+                                            Architecture</a></h2>
                                 </li>
                                 <li class="event-info"><strong>Date: </strong> Monday, February 27</li>
                                 <li class="event-info"><strong>Time: </strong>6:30-7:30 pm ET</li>
@@ -60,7 +63,6 @@
                                 <li class="event-info"><strong>Cost: </strong>Free</li>
                                 <li></li>
                             </ul>
-                            <a class="rsvp-btn event-btn" href="#recipe-btn">Details</a>
                         </div>
                     </figure>
                 </div>
@@ -82,7 +84,6 @@
                                 <li class="event-info"><strong>Where: </strong>Como Japanese Garden</li>
                                 <li class="event-info"><strong>Cost: </strong>$8.00</li>
                             </ul>
-                            <a class="rsvp-btn event-btn" href="#recipe-btn">Details</a>
                         </div>
                     </figure>
                 </div>
@@ -101,12 +102,11 @@
                             <li class="event-info"><strong>Where: </strong>Online</li>
                             <li class="event-info"><strong>Cost: </strong>Free</li>
                         </ul>
-                        <a class="rsvp-btn event-btn" href="#recipe-btn">Details</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about-us-top">
             <h1 class="section-header">About Us</h1>
             <div class="fc-about-us">
                 <img class="second-hero" width="300" height="300"
@@ -131,7 +131,7 @@
                 </p>
             </div>
         </section>
-        <section class="award">
+        <section class="award" id="award-top">
             <h1 class="section-header">Awards</h1>
             <div class="card">
                 <div class="item gazou">
@@ -164,7 +164,7 @@
                 </div>
                 <div class="item item05">
                     <h2><a class="event-title-link" href="award2.html#award2-top">2023 The Japanese Scholarship
-                            Award Winner <br>Jessica Norman - Metropolitan star State University</a>
+                            Award Winner <br>Jessica Norman - Metropolitan Star State University</a>
                     </h2>
                     <p><br>
                         <quote>"Thank you to the Japan Association and the sponsor for making this scholarship
@@ -241,7 +241,7 @@
             </table>
         </section>
     </main>
-    <aside>
+    <aside id="email-form-top">
         <h1 class="section-header">Newsletter</h1>
         <form action="/action_page.php">
             <div class="fc-form">
@@ -256,6 +256,8 @@
                     <label>
                         <input type="checkbox" unchecked="unchecked" name="subscribe"> I consent to Japan Association
                         collecting my details through this form.
+                        <br><input type="checkbox" checked="checked" name="subscribe">Please send me membership
+                        information.
                     </label>
                 </div>
 
@@ -264,48 +266,51 @@
                 </div>
             </div>
         </form>
-
-        <footer>
-            <div class="footer-fc">
-                <div class="item footer1">
-                    <img id="logo-footer" src="images/Koifish-blue.png"
-                        alt="Japan Assoication Logo with Koifish drawing" width="100px">
-
-                    <p class="footer-contact"> Copyright All Rights Reserved<br>
-                        &copy; 2023 Japan Association</p>
-                </div>
-
-                <div class="item footer2">
-                    <p class="footer-contact">
-                        Address <br>
-                        1588 Chowen Ave North <br>
-                        Minneapolis, MN 55444 <br>
-                    </p>
-                </div>
-
-                <div class="item footer3">
-                    <p class="footer-contact">
-                        Contact <br>
-                        Phone (612)-555-3123 <br>
-                        Email Address: japanorganization.org<br>
-
-                    </p>
-
-                </div>
-                <div class="item footer4">
-                    <div class="column links footer-contact">
-                        <ul id="footer-ul">
-                            <li><a href="#home">HOME</a></li>
-                            <li><a href="#events">EVENTS</a></li>
-                            <li><a href="#about-us">ABOUT US</a></li>
-                            <li><a href="#award">AWARD</a></li>
-                        </ul>
-                    </div>
-                </div>
-
+    </aside>
+    <footer>
+        <div class="footer-fc">
+            <div class="item footer1">
+                <img id="logo-footer" src="images/Koifish-blue.png" alt="Japan Assoication Logo with Koifish drawing"
+                    width="100px">
             </div>
 
-        </footer>
+            <div class="item footer2">
+                <p class="footer-contact"> Copyright All Rights Reserved<br>
+                    &copy; 2023 Japan Association</p>
+            </div>
+
+
+            <div class="item footer3">
+                <p class="footer-contact">
+                    Address <br>
+                    1588 Chowen Ave North <br>
+                    Minneapolis, MN 55444 <br>
+                </p>
+            </div>
+
+            <div class="item footer4">
+                <p class="footer-contact">
+                    Contact <br>
+                    Phone (612)-555-3123 <br>
+                    Email Address: japanorganization.org<br>
+
+                </p>
+
+            </div>
+            <div class="item footer5">
+                <div class="column links footer-contact">
+                    <ul id="footer-ul">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#events">EVENTS</a></li>
+                        <li><a href="#about-us">ABOUT US</a></li>
+                        <li><a href="#award">AWARD</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
 </body>
 
 </html>
