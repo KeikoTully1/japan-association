@@ -70,7 +70,7 @@ img.image-top {
 
 .header {
     display: flex;
-    align-items: center;
+    align-items: start;
     /* justify-content: space-between; */
     padding: 10px 50px;
     color: white;
@@ -161,9 +161,9 @@ a.detail-btn:hover {
 .section-header {
     position: relative;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 70px;
     margin-bottom: 3rem;
-    font-size: xx-large;
+    font-size: 2.5rem;
 }
 
 .event .card,
@@ -176,10 +176,7 @@ a.detail-btn:hover {
     flex-wrap: wrap;
     align-items: center;
     gap: 30px;
-    /*IE ends support so we can use */
     padding-bottom: 50px;
-    /* padding-top: 30px; */
-
     /* 
     flex-wrap: nowrap;  This is default.
 
@@ -335,6 +332,10 @@ a.event-title-link:active {
 
 }
 
+figure {
+    text-align: center;
+}
+
 
 /* reference https://www.w3schools.com/howto/howto_css_newsletter.asp */
 
@@ -386,18 +387,18 @@ input[type=submit]:hover {
     opacity: 0.8;
 }
 
-
-
-
 #logo {
-
     display: inline-block;
     /*This makes height works with inline.*/
-    margin-left: -20px;
+    /* margin-left: -20px; */
     margin-top: 10px;
     padding-right: 20px;
-    width: 5%;
+    width: 8%;
 
+}
+
+#logo-home {
+    margin-right: 2rem;
 }
 
 /* .link {
