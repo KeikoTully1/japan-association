@@ -462,6 +462,17 @@ input[type=submit]:hover {
     font-size: large;
 }
 
+#social-links {
+list-style: none;
+margin: 10px 30px;
+display:flex
+}
+
+.social-link-item {
+    boarder-radius: 50%;
+    transition: .5s;
+}
+
 
 .event-header {
     color: black;
