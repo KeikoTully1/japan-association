@@ -49,7 +49,6 @@ ul {
     display: inline-block;
     /*This makes height works with inline.*/
     margin-left: -20px;
-    margin-top: 20px;
 }
 
 #hero-image {
@@ -84,7 +83,7 @@ img.image-top {
 }
 
 .header-scrolled {
-    background-color: rgb(6, 57, 226);
+    background-color: black;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -99,9 +98,9 @@ img.image-top {
     font-size: x-large;
 }
 
-/* .link-item a:visited {
-    color: purple;
-} */
+.link-item {
+    padding-top: 30px;
+}
 
 .link-item a:hover {
     color: darkorange;
@@ -162,7 +161,7 @@ a.detail-btn:hover {
 .section-header {
     position: relative;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 120px;
     margin-bottom: 3rem;
     font-size: 2.5rem;
 }
@@ -233,10 +232,10 @@ a.event-title-link:active {
     height: 100%;
 }
 
-.event-image-container{
+.event-image-container {
     width: 100%;
     height: 300px;
-  }
+}
 
 .event-image {
     display: block;
@@ -279,11 +278,11 @@ a.event-title-link:active {
     object-fit: cover;
     min-width: 550px;
     max-height: 1200px;
-  }
+}
 
-.fc-about-us > * {
+.fc-about-us>* {
     flex: 1;
-  }
+}
 
 #mission-paragraph {
     min-width: 550px;
@@ -318,19 +317,19 @@ a.event-title-link:active {
 
 /* box-shadows reference: https://youtu.be/Yon4l3MUBGY */
 
-.award-image-container{
+.award-image-container {
     width: 100%;
     height: 450px;
 
     padding: 0.5em;
-    box-shadow: 0 5px 20px rgba(0,0,0,.25);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .25);
     transition: transform 300ms, box-shadow 300ms;
-  }
+}
 
-  .award-image-container:hover {
+.award-image-container:hover {
     transform: scale(1.1);
-    box-shadow: 0 15px 80px rgba(0,0,0,.25);
-  }
+    box-shadow: 0 15px 80px rgba(0, 0, 0, .25);
+}
 
 #award-image1 {
     display: block;
@@ -341,6 +340,55 @@ a.event-title-link:active {
 
 quote {
     font-style: italic;
+}
+
+/* reference: https://www.youtube.com/watch?v=_R-TmN5kErE */
+
+.blockquote {
+    margin: 15px 30px;
+    padding: 15px;
+    padding-right: 50px;
+    background: #f8fffe;
+    border: 1px solid #b0d2cb;
+    color: #0b4237;
+}
+
+.blockquote-text {
+    font-family: 'Gelasio', 'serif';
+    font-style: italic;
+    line-height: 1.5;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.blockquote-text:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.blockquote-bordered {
+    border-left-width: 10px;
+}
+
+.blockquote-text-credit {
+    font-style: normal;
+    text-align: right;
+    font-size:large;
+}
+
+.blockquote-text-credit::before {
+    content: "\2014\0020"
+}
+
+.blockquote-quoted::before {
+    top: 0.45em;
+    font-family: Georgia;
+    position: relative;
+    content: "\201c";
+    font-size: 100px;
+    color: #009578;
+    display: block;
+    margin-bottom: -30px;
+    margin-top: -20px;
 }
 
 .item05 {
@@ -355,11 +403,21 @@ figure {
 }
 
 .blog-link-text {
-    color:black;
+    color: black;
     font-size: 1.5rem;
     text-align: center;
 }
 
+.blog-link a:hover {
+    color: darkorange;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.blog-link a:active {
+    color: red;
+    text-decoration: underline;
+}
 
 /* reference https://www.w3schools.com/howto/howto_css_newsletter.asp */
 
@@ -422,6 +480,7 @@ input[type=submit]:hover {
 
 #logo-home {
     margin-right: 2rem;
+    margin-top: 10px;
 }
 
 .footer-fc {
@@ -435,7 +494,7 @@ input[type=submit]:hover {
     gap: 30px;
     padding-bottom: 50px;
     padding-top: 30px;
-    background-color: rgb(6, 57, 226);
+    background-color: black;
     color: white;
 }
 
@@ -450,7 +509,6 @@ input[type=submit]:hover {
 
 #footer-ul li a {
     color: white
-
 }
 
 #footer-ul li a:hover {
@@ -463,14 +521,27 @@ input[type=submit]:hover {
 }
 
 #social-links {
-list-style: none;
-margin: 10px 30px;
-display:flex
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    list-style: none;
+    margin: 10px 30px;
+
 }
 
-.social-link-item {
-    boarder-radius: 50%;
+.social-icon {
+    color: white;
     transition: .5s;
+    font-size: 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 20px 20px;
+    margin-right: 10px;
+}
+
+.social-icon:hover {
+    color: red;
+    border: 1px solid red;
 }
 
 
