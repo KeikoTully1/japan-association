@@ -205,7 +205,7 @@ a.detail-btn:hover {
 .event-title {
     margin-top: 20px;
     margin-bottom: 10px;
-
+    margin-left: 30px;
 }
 
 .event-title-link {
@@ -235,6 +235,12 @@ a.event-title-link:active {
 .event-image-container {
     width: 100%;
     height: 300px;
+}
+
+.item01,
+.item02,
+.item03 {
+    background-color: #b0d2cb;
 }
 
 .event-image {
@@ -280,12 +286,19 @@ a.event-title-link:active {
     max-height: 1200px;
 }
 
+strong.mission-text {
+    font-size: 3rem;
+}
+
 .fc-about-us>* {
     flex: 1;
 }
 
 #mission-paragraph {
     min-width: 550px;
+    background: #b0d2cb;
+    padding-left: 30px;
+    padding-right: 20px;
 }
 
 .fc-about-us {
@@ -331,12 +344,35 @@ a.event-title-link:active {
     box-shadow: 0 15px 80px rgba(0, 0, 0, .25);
 }
 
+.scholarship-title {
+
+    margin-left: 25px;
+}
+
+.award-title {
+    margin-left: 60px;
+    margin-bottom: 10px;
+
+}
+
 #award-image1 {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+.award-container {
+    background: #b0d2cb;
+    padding-bottom: 30px ;
+    padding-left: 40px;
+}
+
+.award-paragrah {
+    padding-left: 40px;
+}
+
+
 
 quote {
     font-style: italic;
@@ -372,7 +408,7 @@ quote {
 .blockquote-text-credit {
     font-style: normal;
     text-align: right;
-    font-size:large;
+    font-size: large;
 }
 
 .blockquote-text-credit::before {
@@ -595,8 +631,6 @@ a.rsvp-btn:hover {
     color: white;
 }
 
-/* Small devices */
-@media (max-width: 600px) {
     p {
         font-size: 1.25rem;
     }
@@ -615,9 +649,6 @@ a.rsvp-btn:hover {
         font-size: medium;
     } */
 
-    .event-paragrah {}
-
-}
 
 /* Medium/Tablets */
 @media (min-width: 601px) and (max-width: 1000px) {
