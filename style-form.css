@@ -66,6 +66,13 @@
 
 }
 
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
 #footer-ul li a {
     color: white
 }
