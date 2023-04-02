@@ -12,3 +12,18 @@ window.addEventListener('scroll', () => {
         headerE1.classList.remove('header-scrolled');
     }
 });
+
+// hamburger menu - reference: https://youtu.be/Tpoa6RWttoM
+
+let nav = document.querySelector("#navArea");
+let btn = document.querySelector(".toggle-btn");
+let mask = document.querySelector("#mask");
+let link = document.querySelector("a");
+
+btn.onclick = () => {
+  nav.classList.toggle("open");
+};
+
+mask.onclick = () => {
+  nav.classList.toggle("open");
+};
