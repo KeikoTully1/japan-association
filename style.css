@@ -27,8 +27,6 @@
 
 
 body {
-    /* height: 5000px; */
-    /*To test the nav functionality - we can change later*/
     position: relative;
     overflow-x: hidden;
     background-color: rgba(237, 240, 210, 0.349);
@@ -54,7 +52,7 @@ ul {
 #hero-image {
     width: 100%;
     /*To use for entire screen*/
-    height: 80vh;
+    height: 60vh;
     object-fit: cover;
     /*To use for aspect ratio*/
     position: absolute;
@@ -660,7 +658,7 @@ p {
 
     div h1 {
         font-size: small;
-        padding-top: 100px;
+        padding-top: 200px;
         margin-bottom: -40px;
     }
 
@@ -718,260 +716,262 @@ p {
     }
 
 
-/* Mobile device*/
-@media (min-width: 480px) and (max-width: 767px) {
-    p {
-        font-size: 1rem;
-        line-height: 1;
-    }
-
-    a.link {
-        display: none;
-    }
-
-    .section-header {
-        font-size: 1rem;
-        margin-top: 100px;
-        margin-bottom: 20px;
-
-    }
-
-    div h1 {
-        font-size: small;
-        padding-top: 100px;
-        margin-bottom: -40px;
-    }
-
-    p.header-text {
-        font-size: 0.5rem;
-    }
-
-    .header {
-        font-size: 1rem;
-        line-height: 1;
-    }
-
-    .second-hero {
-        display: none;
-        flex: 0;
-    }
-
-    p#mission-paragraph {
-
-        flex: none;
-        margin-left: -200px;
-        width: 40%;
-        font-size: 0.8rem;
-        padding-right: 20px;
-    }
-
-    #mission-paragraph {
-        min-width: 360px;
-    }
-
-    strong.mission-text {
-        font-size: 1rem;
-    }
-
-    .event-title-link {
-        font-size: 1.5rem;
-    }
-
-    .event-info {
-        font-size: medium;
-    }
-
-    a.detail-btn {
-        font-size: 0.5rem;
-        margin-top: 1rem;
-    }
-
-    #hero-image {
-        height: 40vh;
-    }
-
-    iframe {
-        width: 300px;
-        height: 350px;
-    }
-
-/* tablet*/
-@media (min-width: 768px) and (max-width: 991px) {
-    p {
-        font-size: 1rem;
-        line-height: 1;
-    }
-
-    a.link {
-        display: none;
-    }
-
-    .section-header {
-        font-size: 1rem;
-        margin-top: 100px;
-        margin-bottom: 20px;
-
-    }
-
-    div h1 {
-        font-size: small;
-        padding-top: 100px;
-        margin-bottom: -40px;
-    }
-
-    p.header-text {
-        font-size: 0.5rem;
-    }
-
-    .header {
-        font-size: 1rem;
-        line-height: 1;
-    }
-
-    .second-hero {
-        display: none;
-        flex: 0;
-    }
-
-    p#mission-paragraph {
-
-        flex: none;
-        margin-left: -200px;
-        width: 40%;
-        font-size: 0.8rem;
-        padding-right: 20px;
-    }
-
-    #mission-paragraph {
-        min-width: 360px;
-    }
-
-    strong.mission-text {
-        font-size: 1rem;
-    }
-
-    .event-title-link {
-        font-size: 1.5rem;
-    }
-
-    .event-info {
-        font-size: medium;
-    }
-
-    a.detail-btn {
-        font-size: 0.5rem;
-        margin-top: 1rem;
-    }
-
-    #hero-image {
-        height: 40vh;
-    }
-
-    iframe {
-        width: 300px;
-        height: 350px;
-    }
-
-
-    /* Medium/Tablets */
-     @media (min-width: 992px) and (max-width: 1199px) {
-
-
-        
+    /* Mobile device*/
+    @media (min-width: 480px) and (max-width: 767px) {
         p {
             font-size: 1rem;
             line-height: 1;
         }
-    
+
         a.link {
             display: none;
         }
-    
+
         .section-header {
             font-size: 1rem;
             margin-top: 100px;
             margin-bottom: 20px;
-    
+
         }
-    
+
         div h1 {
             font-size: small;
             padding-top: 100px;
             margin-bottom: -40px;
-        } 
-    
+        }
+
         p.header-text {
             font-size: 0.5rem;
         }
-    
+
         .header {
             font-size: 1rem;
             line-height: 1;
         }
-    
+
         .second-hero {
             display: none;
             flex: 0;
         }
-    
+
         p#mission-paragraph {
-    
+
             flex: none;
             margin-left: -200px;
             width: 40%;
             font-size: 0.8rem;
             padding-right: 20px;
         }
-    
+
         #mission-paragraph {
             min-width: 360px;
         }
-    
+
         strong.mission-text {
             font-size: 1rem;
         }
-    
+
         .event-title-link {
             font-size: 1.5rem;
         }
-    
+
         .event-info {
             font-size: medium;
         }
-    
+
         a.detail-btn {
             font-size: 0.5rem;
             margin-top: 1rem;
         }
-    
+
         #hero-image {
-            height: 50vh;
+            height: 40vh;
         }
-    
+
+        iframe {
+            width: 300px;
+            height: 350px;
+        }
+    }
+
+    /* tablet*/
+    @media (min-width: 768px) and (max-width: 991px) {
+        p {
+            font-size: 1rem;
+            line-height: 1;
+        }
+
+        a.link {
+            display: none;
+        }
+
+        .section-header {
+            font-size: 1rem;
+            margin-top: 100px;
+            margin-bottom: 20px;
+
+        }
+
+        div h1 {
+            font-size: small;
+            padding-top: 100px;
+            margin-bottom: -40px;
+        }
+
+        p.header-text {
+            font-size: 0.5rem;
+        }
+
+        .header {
+            font-size: 1rem;
+            line-height: 1;
+        }
+
+        .second-hero {
+            display: none;
+            flex: 0;
+        }
+
+        p#mission-paragraph {
+
+            flex: none;
+            margin-left: -200px;
+            width: 40%;
+            font-size: 0.8rem;
+            padding-right: 20px;
+        }
+
+        #mission-paragraph {
+            min-width: 360px;
+        }
+
+        strong.mission-text {
+            font-size: 1rem;
+        }
+
+        .event-title-link {
+            font-size: 1.5rem;
+        }
+
+        .event-info {
+            font-size: medium;
+        }
+
+        a.detail-btn {
+            font-size: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        #hero-image {
+            height: 40vh;
+        }
+
         iframe {
             width: 300px;
             height: 350px;
         }
 
-    } 
-
-    /* Large */
-    @media (min-width: 1200px) {
-
-        p {
-            font-size: 1.5rem;
-            line-height: 1.5;
-        }
-
-        .header {
-            font-size: 1.5rem;
-            line-height: 1.5;
-        }
-
-        #hero-image {
-            height: 70vh;
-        }
     }
-    /******************************************
+        /* Medium/Tablets */
+        @media (min-width: 992px) and (max-width: 1199px) {
+
+
+
+            p {
+                font-size: 1rem;
+                line-height: 1;
+            }
+
+            a.link {
+                display: none;
+            }
+
+            .section-header {
+                font-size: 1rem;
+                margin-top: 100px;
+                margin-bottom: 20px;
+
+            }
+
+            div h1 {
+                font-size: small;
+                padding-top: 100px;
+                margin-bottom: -40px;
+            }
+
+            p.header-text {
+                font-size: 0.5rem;
+            }
+
+            .header {
+                font-size: 1rem;
+                line-height: 1;
+            }
+
+            .second-hero {
+                display: none;
+                flex: 0;
+            }
+
+            p#mission-paragraph {
+
+                flex: none;
+                margin-left: -200px;
+                width: 40%;
+                font-size: 0.8rem;
+                padding-right: 20px;
+            }
+
+            #mission-paragraph {
+                min-width: 360px;
+            }
+
+            strong.mission-text {
+                font-size: 1rem;
+            }
+
+            .event-title-link {
+                font-size: 1.5rem;
+            }
+
+            .event-info {
+                font-size: medium;
+            }
+
+            a.detail-btn {
+                font-size: 0.5rem;
+                margin-top: 1rem;
+            }
+
+            #hero-image {
+                height: 50vh;
+            }
+
+            iframe {
+                width: 300px;
+                height: 350px;
+            }
+
+        }
+
+        /* Large */
+        @media (min-width: 1200px) {
+
+            p {
+                font-size: 1.5rem;
+                line-height: 1.5;
+            }
+
+            .header {
+                font-size: 1.5rem;
+                line-height: 1.5;
+            }
+
+            #hero-image {
+                height: 70vh;
+            }
+        }
+
+        /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
