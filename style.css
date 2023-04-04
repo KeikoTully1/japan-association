@@ -353,7 +353,7 @@ strong.mission-text {
 
 }
 
-#award-image1 {
+#award-image1, #award-image2 {
     display: block;
     width: 100%;
     height: 100%;
@@ -453,6 +453,50 @@ figure {
     text-decoration: underline;
 }
 
+.sponsors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+  }
+  
+  .sponsor-item {
+    align-self: center;
+    text-align: center; 
+    vertical-align: middle; 
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 33%;
+  }
+
+  #sponsor1 {
+    width: 100px;
+    height: 54px;
+  }
+
+  #sponsor2 {
+    width:82px;
+    height:53px;
+  }
+
+  #sponsor3 {
+    width:135px;
+  }
+
+  #sponsor4 {
+    width:170px;
+    /* height:auto; */
+  }
+
+  #sponsor5 {
+    width: 135;
+    height: 26;
+  }
+
+  #sponsor6 {
+    width: 115;
+    height: 62;
+  }
+
 /* reference https://www.w3schools.com/howto/howto_css_newsletter.asp */
 
 .fc-form {
@@ -512,7 +556,7 @@ input[type=submit]:hover {
 
 }
 
-#logo-home {
+#logo-home, #logo-home2 {
     margin-right: 2rem;
     margin-top: 10px;
 }
@@ -679,8 +723,8 @@ p {
     p#mission-paragraph {
 
         flex: none;
-        margin-left: -200px;
-        width: 40%;
+        margin: 0 auto;
+        width: 500px;
         font-size: 0.8rem;
         padding-right: 20px;
     }
@@ -707,13 +751,19 @@ p {
     }
 
     #hero-image {
-        height: 40vh;
+        height: 300px;
     }
 
     iframe {
         width: 300px;
         height: 350px;
     }
+
+    .sponsors {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 200px 200px;
+      }
 }
 
 
@@ -758,8 +808,8 @@ p {
         p#mission-paragraph {
 
             flex: none;
-            margin-left: -200px;
-            width: 40%;
+            margin: 0 auto;
+            width: 500px;
             font-size: 0.8rem;
             padding-right: 20px;
         }
@@ -786,7 +836,7 @@ p {
         }
 
         #hero-image {
-            height: 40vh;
+            height: 300px;
         }
 
         iframe {
@@ -797,6 +847,12 @@ p {
         #large-device-size {
             display: none;
         }
+
+        .sponsors {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 200px 200px 200px;
+          }
     }
 
     /* tablet*/
@@ -840,8 +896,8 @@ p {
         p#mission-paragraph {
 
             flex: none;
-            margin-left: -200px;
-            width: 40%;
+            margin: 0 auto;
+            width: 500px;
             font-size: 0.8rem;
             padding-right: 20px;
         }
@@ -868,7 +924,7 @@ p {
         }
 
         #hero-image {
-            height: 40vh;
+            height: 300px;
         }
 
         iframe {
@@ -879,6 +935,12 @@ p {
         #small-device-size {
             display: none;
         }
+
+        .sponsors {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 200px 200px;
+          }
 
     }
         /* Medium/Tablets */
@@ -896,20 +958,20 @@ p {
             }
 
             .section-header {
-                font-size: 1rem;
+                font-size: 1.5rem;
                 margin-top: 100px;
                 margin-bottom: 20px;
 
             }
 
             div h1 {
-                font-size: small;
+                font-size: 1.5rem;
                 padding-top: 100px;
                 margin-bottom: -40px;
             }
 
             p.header-text {
-                font-size: 0.5rem;
+                font-size: 1rem;
             }
 
             .header {
@@ -925,9 +987,9 @@ p {
             p#mission-paragraph {
 
                 flex: none;
-                margin-left: -200px;
-                width: 40%;
-                font-size: 0.8rem;
+                margin: 0 auto;
+                width: 500px;
+                font-size: 1rem;
                 padding-right: 20px;
             }
 
@@ -948,12 +1010,12 @@ p {
             }
 
             a.detail-btn {
-                font-size: 0.5rem;
+                font-size: 1rem;
                 margin-top: 1rem;
             }
 
             #hero-image {
-                height: 50vh;
+                height: 300px;
             }
 
             iframe {
@@ -964,6 +1026,12 @@ p {
             #small-device-size {
                 display: none;
             }
+
+            .sponsors {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 200px 200px;
+              }
 
         }
 
@@ -981,12 +1049,18 @@ p {
             }
 
             #hero-image {
-                height: 60vh;
+                height: 600px;
             }
 
             #small-device-size {
                 display: none;
             }
+
+            .sponsors {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 200px 200px;
+              }
         }
 
         /******************************************
