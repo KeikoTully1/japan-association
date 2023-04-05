@@ -354,6 +354,10 @@ strong.mission-text {
   background: #b0d2cb;
   padding-bottom: 30px;
   padding-left: 40px;
+  padding-top: 20px;
+  border-style: ridge;
+  border-width: 20px;
+
 }
 
 .award-paragrah {
