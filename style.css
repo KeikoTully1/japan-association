@@ -1,9 +1,6 @@
 /* reference: https://www.youtube.com/watch?v=axQ7eN2oPu0 */
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Roboto:wght@300;400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Roboto:wght@300;400&display=swap");
 
 /******************************************
 /* CSS
@@ -11,171 +8,168 @@
 
 /* Box Model Hack */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-
 * {
-    padding: 0;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 
-
 body {
-    position: relative;
-    overflow-x: hidden;
-    background-color: rgba(237, 240, 210, 0.349);
+  position: relative;
+  overflow-x: hidden;
+  background-color: rgba(237, 240, 210, 0.349);
 }
 
 a {
-    text-decoration: none;
-    /*To remove the underline*/
-    color: white;
+  text-decoration: none;
+  /*To remove the underline*/
+  color: white;
 }
 
 ul {
-    list-style: none;
-    /*To remove bullet point*/
+  list-style: none;
+  /*To remove bullet point*/
 }
 
 #logo {
-    display: inline-block;
-    /*This makes height works with inline.*/
-    margin-left: -20px;
+  display: inline-block;
+  /*This makes height works with inline.*/
+  margin-left: -20px;
 }
 
 #hero-image {
-    width: 100%;
-    /*To use for entire screen*/
-    height: 60vh;
-    object-fit: cover;
-    /*To use for aspect ratio*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    filter: brightness(1);
+  width: 100%;
+  /*To use for entire screen*/
+  height: 60vh;
+  object-fit: cover;
+  /*To use for aspect ratio*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: brightness(1);
 }
 
 img.image-top {
-    object-position: top;
+  object-position: top;
 }
 
 .header {
-    display: flex;
-    align-items: start;
-    /* justify-content: space-between; */
-    padding: 10px 50px;
-    color: white;
-    position: fixed;
-    /* position: sticky; */
-    /*To be stickly nav*/
-    width: 100%;
-    z-index: 99999999;
-    transition: all 0.5s;
+  display: flex;
+  align-items: start;
+  /* justify-content: space-between; */
+  padding: 10px 50px;
+  color: white;
+  position: fixed;
+  /* position: sticky; */
+  /*To be stickly nav*/
+  width: 100%;
+  z-index: 99999999;
+  transition: all 0.5s;
 }
 
 .header-scrolled {
-    background-color: black;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  background-color: black;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
 .links {
-    display: flex;
-    column-gap: 30px;
-    flex-wrap: wrap;
+  display: flex;
+  column-gap: 30px;
+  flex-wrap: wrap;
 }
 
 .link {
-    color: white;
-    font-size: x-large;
+  color: white;
+  font-size: x-large;
 }
 
 .link-item {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .link-item a:hover {
-    color: darkorange;
-    cursor: pointer;
-    text-decoration: underline;
+  color: darkorange;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .link-item a:active {
-    color: red;
-    text-decoration: underline;
+  color: red;
+  text-decoration: underline;
 }
 
 div h1 {
-    position: relative;
-    /*This makes outside of the shadow of background image */
-    color: white;
-    font-size: 3rem;
-    text-align: center;
-    line-height: 8rem;
-    padding-top: 15rem;
+  position: relative;
+  /*This makes outside of the shadow of background image */
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 8rem;
+  padding-top: 15rem;
 }
 
 p.header-text {
-    position: relative;
-    /*This makes outside of the shadow of background image */
-    color: white;
-    font-size: 1.5rem;
-    text-align: center;
-
+  position: relative;
+  /*This makes outside of the shadow of background image */
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .hero-text {
-    text-align: center;
+  text-align: center;
 }
 
 a.detail-btn {
-    display: inline-block;
-    /*This makes height works with inline.*/
-    background-color: red;
-    /*This makes outside of the shadow of background image */
-    text-align: center;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    text-decoration: none;
-    padding: 10px;
-    color: white;
-    transition-duration: 0.4s;
+  display: inline-block;
+  /*This makes height works with inline.*/
+  background-color: red;
+  /*This makes outside of the shadow of background image */
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  transition-duration: 0.4s;
 
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 a.detail-btn:hover {
-    background-color: #4CAF50;
-    /* Green */
-    color: white;
+  background-color: #4caf50;
+  /* Green */
+  color: white;
 }
 
 .section-header {
-    position: relative;
-    text-align: center;
-    margin-top: 120px;
-    margin-bottom: 3rem;
-    font-size: 2.5rem;
+  position: relative;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
 }
 
 .event .card,
 .card,
 .blog .card {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    /*This is default of flex */
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 30px;
-    padding-bottom: 50px;
-    /* 
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  /*This is default of flex */
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 50px;
+  /* 
     flex-wrap: nowrap;  This is default.
 
     justify-content: space-around;
@@ -197,872 +191,847 @@ a.detail-btn:hover {
     flex-grow: ;
     flex-shrink: ;
     */
-
 }
 
 .event-title {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 30px;
 }
 
 .event-title-link {
-    color: black;
+  color: black;
 }
 
 a.event-title-link:visited {
-    color: purple;
-    text-decoration: underline;
+  color: purple;
+  text-decoration: underline;
 }
 
 a.event-title-link:hover {
-    color: darkorange;
-    cursor: pointer;
+  color: darkorange;
+  cursor: pointer;
 }
 
 a.event-title-link:active {
-    color: red;
-    text-decoration: underline;
+  color: red;
+  text-decoration: underline;
 }
 
 .event .item {
-    width: 500px;
-    height: 100%;
+  width: 500px;
+  height: 100%;
 }
 
 .event-image-container {
-    width: 100%;
-    height: 300px;
+  width: 100%;
+  height: 300px;
 }
 
 .item01,
 .item02,
 .item03 {
-    background-color: #b0d2cb;
+  background-color: #b0d2cb;
 }
 
 .event-image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .fc-event {
-    display: flex;
+  display: flex;
 }
 
 .fc-event a.event-btn {
+  font-size: 1rem;
+  padding: 5px;
 
-    font-size: 1rem;
-    padding: 5px;
-
-    /* display: inline-block; */
-    background-color: red;
-    position: relative;
-    text-align: center;
-    border-radius: 10px;
-    text-decoration: none;
-    padding: 10px;
-    color: white;
-    transition-duration: 0.4s;
-    margin-left: 25px;
-    margin-top: 5px;
+  /* display: inline-block; */
+  background-color: red;
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  transition-duration: 0.4s;
+  margin-left: 25px;
+  margin-top: 5px;
 }
 
 .award-header {
-    position: relative;
-    text-align: center;
-
+  position: relative;
+  text-align: center;
 }
 
 .second-hero {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    min-width: 550px;
-    max-height: 1200px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-width: 550px;
+  max-height: 1200px;
 }
 
 strong.mission-text {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
-.fc-about-us>* {
-    flex: 1;
+.fc-about-us > * {
+  flex: 1;
 }
 
 #mission-paragraph {
-    min-width: 550px;
-    background: #b0d2cb;
-    padding-left: 30px;
-    padding-right: 20px;
+  min-width: 550px;
+  background: #b0d2cb;
+  padding-left: 30px;
+  padding-right: 20px;
 }
 
 .fc-about-us {
-    display: flex;
-    margin-left: 200px;
-    margin-right: 200px;
-    gap: 30px;
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px;
+  gap: 30px;
 }
 
 #paragraph {
-    margin: 50px;
+  margin: 50px;
 }
 
 .award .card {
-    display: flex;
-    flex-direction: row;
-    /*This is default of flex */
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 30px;
-    /*IE ends support so we can use */
-    padding-top: 50px;
-    padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  /*This is default of flex */
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  /*IE ends support so we can use */
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .award .card:nth-child(even) {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 /* box-shadows reference: https://youtu.be/Yon4l3MUBGY */
 
 .award-image-container {
-    width: 100%;
-    height: 450px;
+  width: 100%;
+  height: 450px;
 
-    padding: 0.5em;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, .25);
-    transition: transform 300ms, box-shadow 300ms;
+  padding: 0.5em;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 300ms, box-shadow 300ms;
 }
 
 .award-image-container:hover {
-    transform: scale(1.1);
-    box-shadow: 0 15px 80px rgba(0, 0, 0, .25);
+  transform: scale(1.1);
+  box-shadow: 0 15px 80px rgba(0, 0, 0, 0.25);
 }
 
 .scholarship-title {
-
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 .award-title {
-    margin-left: 60px;
-    margin-bottom: 10px;
-
+  margin-left: 60px;
+  margin-bottom: 10px;
 }
 
-#award-image1, #award-image2 {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+#award-image1,
+#award-image2 {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .award-container {
-    background: #b0d2cb;
-    padding-bottom: 30px;
-    padding-left: 40px;
+  background: #b0d2cb;
+  padding-bottom: 30px;
+  padding-left: 40px;
 }
 
 .award-paragrah {
-    padding-left: 40px;
+  padding-left: 40px;
 }
 
-
-
 quote {
-    font-style: italic;
+  font-style: italic;
 }
 
 /* reference: https://www.youtube.com/watch?v=_R-TmN5kErE */
 
 .blockquote {
-    margin: 15px 30px;
-    padding: 15px;
-    padding-right: 50px;
-    background: #f8fffe;
-    border: 1px solid #b0d2cb;
-    color: #0b4237;
+  margin: 15px 30px;
+  padding: 15px;
+  padding-right: 50px;
+  background: #f8fffe;
+  border: 1px solid #b0d2cb;
+  color: #0b4237;
 }
 
 .blockquote-text {
-    font-family: 'Gelasio', 'serif';
-    font-style: italic;
-    line-height: 1.5;
-    padding-left: 20px;
-    margin: 0;
+  font-family: "Gelasio", "serif";
+  font-style: italic;
+  line-height: 1.5;
+  padding-left: 20px;
+  margin: 0;
 }
 
 .blockquote-text:not(:last-child) {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .blockquote-bordered {
-    border-left-width: 10px;
+  border-left-width: 10px;
 }
 
 .blockquote-text-credit {
-    font-style: normal;
-    text-align: right;
-    font-size: large;
+  font-style: normal;
+  text-align: right;
+  font-size: large;
 }
 
 .blockquote-text-credit::before {
-    content: "\2014\0020"
+  content: "\2014\0020";
 }
 
 .blockquote-quoted::before {
-    top: 0.45em;
-    font-family: Georgia;
-    position: relative;
-    content: "\201c";
-    font-size: 100px;
-    color: #009578;
-    display: block;
-    margin-bottom: -30px;
-    margin-top: -20px;
+  top: 0.45em;
+  font-family: Georgia;
+  position: relative;
+  content: "\201c";
+  font-size: 100px;
+  color: #009578;
+  display: block;
+  margin-bottom: -30px;
+  margin-top: -20px;
 }
 
 .item05 {
-    width: 600px;
-    padding-left: 10px;
-    padding-right: 10px;
-
+  width: 600px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 figure {
-    text-align: center;
+  text-align: center;
 }
 
 .blog-link-text {
-    color: black;
-    font-size: 1.5rem;
-    text-align: center;
+  color: black;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .blog-link a:hover {
-    color: darkorange;
-    cursor: pointer;
-    text-decoration: underline;
+  color: darkorange;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .blog-link a:active {
-    color: red;
-    text-decoration: underline;
+  color: red;
+  text-decoration: underline;
 }
 
 .sponsors {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 200px;
-  }
-  
-  .sponsor-item {
-    align-self: center;
-    text-align: center; 
-    vertical-align: middle; 
-    margin: 0 auto;
-    padding-top: 30px;
-    width: 33%;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px;
+}
 
-  #sponsor1 {
-    width: 100px;
-    height: 54px;
-  }
+.sponsor-item {
+  align-self: center;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 33%;
+}
 
-  #sponsor2 {
-    width:82px;
-    height:53px;
-  }
+#sponsor1 {
+  width: 100px;
+  height: 54px;
+}
 
-  #sponsor3 {
-    width:135px;
-  }
+#sponsor2 {
+  width: 82px;
+  height: 53px;
+}
 
-  #sponsor4 {
-    width:170px;
-    /* height:auto; */
-  }
+#sponsor3 {
+  width: 135px;
+}
 
-  #sponsor5 {
-    width: 135;
-    height: 26;
-  }
+#sponsor4 {
+  width: 170px;
+  /* height:auto; */
+}
 
-  #sponsor6 {
-    width: 115;
-    height: 62;
-  }
+#sponsor5 {
+  width: 135px;
+  height: 26px;
+}
+
+#sponsor6 {
+  width: 115px;
+  height: 62px;
+}
 
 /* reference https://www.w3schools.com/howto/howto_css_newsletter.asp */
 
 .fc-form {
-    display: flex;
+  display: flex;
 }
 
 .subscribe-text,
 .fields {
-    flex: 2;
+  flex: 2;
 }
 
 .form-btn {
-    flex: 1;
+  flex: 1;
 }
 
 form {
-    border: 3px solid #f1f1f1;
+  border: 3px solid #f1f1f1;
 }
 
 .container {
-    padding: 20px;
-    background-color: #f1f1f1;
+  padding: 20px;
+  background-color: #f1f1f1;
 }
 
-input[type=text],
-input[type=submit] {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    font-size: x-large;
+input[type="text"],
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: x-large;
 }
 
-input[type=checkbox] {
-    margin-top: 16px;
+input[type="checkbox"] {
+  margin-top: 16px;
 }
 
-input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    border: none;
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  border: none;
 }
 
-input[type=submit]:hover {
-    opacity: 0.8;
+input[type="submit"]:hover {
+  opacity: 0.8;
 }
 
 #logo {
-    display: inline-block;
-    /*This makes height works with inline.*/
-    /* margin-left: -20px; */
-    margin-top: 10px;
-    padding-right: 20px;
-    width: 8%;
-
+  display: inline-block;
+  /*This makes height works with inline.*/
+  /* margin-left: -20px; */
+  margin-top: 10px;
+  padding-right: 20px;
+  width: 8%;
 }
 
-#logo-home, #logo-home2 {
-    margin-right: 2rem;
-    margin-top: 10px;
+.logo-home {
+  margin-right: 2rem;
+  margin-top: 10px;
+}
+
+#logo-home,
+#logo-home2,
+#logo-home3 {
+  margin-right: 2rem;
+  margin-top: 10px;
 }
 
 .footer-fc {
-
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    /*This is default of flex */
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 30px;
-    padding-bottom: 50px;
-    padding-top: 30px;
-    background-color: black;
-    color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  /*This is default of flex */
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  background-color: black;
+  color: white;
 }
 
 .column {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 #footer-ul li a {
-    color: white
+  color: white;
 }
 
 #footer-ul li a:hover {
-    color: red;
-    text-decoration: underline;
+  color: red;
+  text-decoration: underline;
 }
 
 .footer-contact {
-    font-size: large;
+  font-size: large;
 }
 
 #social-links {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    list-style: none;
-    margin: 10px 30px;
-
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  list-style: none;
+  margin: 10px 30px;
 }
 
 .social-icon {
-    color: white;
-    transition: .5s;
-    font-size: 25px;
-    border: 1px solid white;
-    border-radius: 50%;
-    padding: 20px 20px;
-    margin-right: 10px;
+  color: white;
+  transition: 0.5s;
+  font-size: 25px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 20px 20px;
+  margin-right: 10px;
 }
 
 .social-icon:hover {
-    color: red;
-    border: 1px solid red;
+  color: red;
+  border: 1px solid red;
 }
 
-
 .event-header {
-    color: black;
-    font-size: xx-large;
-    padding-top: 550px;
+  color: black;
+  font-size: xx-large;
+  padding-top: 550px;
 }
 
 .event-info {
-    font-size: x-large;
-    margin-left: 30px;
-    line-height: 30px;
-
+  font-size: x-large;
+  margin-left: 30px;
+  line-height: 30px;
 }
 
 strong {
-    color: red;
+  color: red;
 }
 
 .event-paragrah {
-
-    max-width: 1000px;
-    font-size: 10px;
-    margin: 0 auto;
-    margin-top: -170px;
-
+  max-width: 1000px;
+  font-size: 10px;
+  margin: 0 auto;
+  margin-top: -170px;
 }
 
 a.rsvp-btn {
-    display: inline-block;
-    /*This makes height works with inline.*/
-    background-color: red;
-    position: relative;
-    /*This makes outside of the shadow of background image */
-    text-align: center;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    text-decoration: none;
-    padding: 10px;
-    color: white;
-    transition-duration: 0.4s;
-    margin-left: 25px;
-    margin-top: 5px;
-
+  display: inline-block;
+  /*This makes height works with inline.*/
+  background-color: red;
+  position: relative;
+  /*This makes outside of the shadow of background image */
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  transition-duration: 0.4s;
+  margin-left: 25px;
+  margin-top: 5px;
 }
 
 a.rsvp-btn:hover {
-    background-color: #4CAF50;
-    /* Green */
-    color: white;
+  background-color: #4caf50;
+  /* Green */
+  color: white;
 }
 
 p {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 .header {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
-
 
 /* Smaller mobile device*/
 @media (max-width: 479px) {
-    p {
-        font-size: 1rem;
-        line-height: 1;
-    }
+  p {
+    font-size: 1rem;
+    line-height: 1;
+  }
 
-    a.link {
-        display: none;
-    }
+  a.link {
+    display: none;
+  }
 
-    .section-header {
-        font-size: 1rem;
-        margin-top: 100px;
-        margin-bottom: 20px;
+  .section-header {
+    font-size: 1rem;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
 
-    }
+  div h1 {
+    font-size: small;
+    padding-top: 200px;
+    margin-bottom: -40px;
+  }
 
-    div h1 {
-        font-size: small;
-        padding-top: 200px;
-        margin-bottom: -40px;
-    }
+  p.header-text {
+    font-size: 0.5rem;
+  }
 
-    p.header-text {
-        font-size: 0.5rem;
-    }
+  .header {
+    font-size: 1rem;
+    line-height: 1;
+  }
 
-    .header {
-        font-size: 1rem;
-        line-height: 1;
-    }
+  .second-hero {
+    display: none;
+    flex: 0;
+  }
 
-    .second-hero {
-        display: none;
-        flex: 0;
-    }
+  p#mission-paragraph {
+    flex: none;
+    margin: 0 auto;
+    width: 500px;
+    font-size: 0.8rem;
+    padding-right: 20px;
+  }
 
-    p#mission-paragraph {
+  #mission-paragraph {
+    min-width: 360px;
+  }
 
-        flex: none;
-        margin: 0 auto;
-        width: 500px;
-        font-size: 0.8rem;
-        padding-right: 20px;
-    }
+  strong.mission-text {
+    font-size: 1rem;
+  }
 
-    #mission-paragraph {
-        min-width: 360px;
-    }
+  .event-title-link {
+    font-size: 1.5rem;
+  }
 
-    strong.mission-text {
-        font-size: 1rem;
-    }
+  .event-info {
+    font-size: medium;
+  }
 
-    .event-title-link {
-        font-size: 1.5rem;
-    }
+  a.detail-btn {
+    font-size: 0.5rem;
+    margin-top: 1rem;
+  }
 
-    .event-info {
-        font-size: medium;
-    }
+  #hero-image {
+    height: 300px;
+  }
 
-    a.detail-btn {
-        font-size: 0.5rem;
-        margin-top: 1rem;
-    }
+  iframe {
+    width: 300px;
+    height: 350px;
+  }
 
-    #hero-image {
-        height: 300px;
-    }
-
-    iframe {
-        width: 300px;
-        height: 350px;
-    }
-
-    .sponsors {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 200px 200px 200px;
-      }
+  .sponsors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+  }
 }
 
-
-    /* Mobile device*/
-    @media (min-width: 480px) and (max-width: 767px) {
-        p {
-            font-size: 1rem;
-            line-height: 1;
-        }
-
-        a.link {
-            display: none;
-        }
-
-        .section-header {
-            font-size: 1rem;
-            margin-top: 100px;
-            margin-bottom: 20px;
-
-        }
-
-        div h1 {
-            font-size: small;
-            padding-top: 100px;
-            margin-bottom: -40px;
-        }
-
-        p.header-text {
-            font-size: 0.5rem;
-        }
-
-        .header {
-            font-size: 1rem;
-            line-height: 1;
-        }
-
-        .second-hero {
-            display: none;
-            flex: 0;
-        }
-
-        p#mission-paragraph {
-
-            flex: none;
-            margin: 0 auto;
-            width: 500px;
-            font-size: 0.8rem;
-            padding-right: 20px;
-        }
-
-        #mission-paragraph {
-            min-width: 360px;
-        }
-
-        strong.mission-text {
-            font-size: 1rem;
-        }
-
-        .event-title-link {
-            font-size: 1.5rem;
-        }
-
-        .event-info {
-            font-size: medium;
-        }
-
-        a.detail-btn {
-            font-size: 0.5rem;
-            margin-top: 1rem;
-        }
-
-        #hero-image {
-            height: 300px;
-        }
-
-        iframe {
-            width: 300px;
-            height: 350px;
-        }
-
-        #large-device-size {
-            display: none;
-        }
-
-        .sponsors {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 200px 200px 200px;
-          }
-    }
-
-    /* tablet*/
-    @media (min-width: 768px) and (max-width: 991px) {
-        p {
-            font-size: 1rem;
-            line-height: 1;
-        }
-
-        a.link {
-            display: none;
-        }
-
-        .section-header {
-            font-size: 1rem;
-            margin-top: 100px;
-            margin-bottom: 20px;
-
-        }
-
-        div h1 {
-            font-size: small;
-            padding-top: 100px;
-            margin-bottom: -40px;
-        }
-
-        p.header-text {
-            font-size: 0.5rem;
-        }
-
-        .header {
-            font-size: 1rem;
-            line-height: 1;
-        }
-
-        .second-hero {
-            display: none;
-            flex: 0;
-        }
-
-        p#mission-paragraph {
-
-            flex: none;
-            margin: 0 auto;
-            width: 500px;
-            font-size: 0.8rem;
-            padding-right: 20px;
-        }
-
-        #mission-paragraph {
-            min-width: 360px;
-        }
-
-        strong.mission-text {
-            font-size: 1rem;
-        }
-
-        .event-title-link {
-            font-size: 1.5rem;
-        }
-
-        .event-info {
-            font-size: medium;
-        }
-
-        a.detail-btn {
-            font-size: 0.5rem;
-            margin-top: 1rem;
-        }
-
-        #hero-image {
-            height: 300px;
-        }
-
-        iframe {
-            width: 300px;
-            height: 350px;
-        }
-
-        #small-device-size {
-            display: none;
-        }
-
-        .sponsors {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 200px 200px;
-          }
-
-    }
-        /* Medium/Tablets */
-        @media (min-width: 992px) and (max-width: 1199px) {
-
-
-
-            p {
-                font-size: 1rem;
-                line-height: 1;
-            }
-
-            a.link {
-                display: none;
-            }
-
-            .section-header {
-                font-size: 1.5rem;
-                margin-top: 100px;
-                margin-bottom: 20px;
-
-            }
-
-            div h1 {
-                font-size: 1.5rem;
-                padding-top: 100px;
-                margin-bottom: -40px;
-            }
-
-            p.header-text {
-                font-size: 1rem;
-            }
-
-            .header {
-                font-size: 1rem;
-                line-height: 1;
-            }
-
-            .second-hero {
-                display: none;
-                flex: 0;
-            }
-
-            p#mission-paragraph {
-
-                flex: none;
-                margin: 0 auto;
-                width: 500px;
-                font-size: 1rem;
-                padding-right: 20px;
-            }
-
-            #mission-paragraph {
-                min-width: 360px;
-            }
-
-            strong.mission-text {
-                font-size: 1rem;
-            }
-
-            .event-title-link {
-                font-size: 1.5rem;
-            }
-
-            .event-info {
-                font-size: medium;
-            }
-
-            a.detail-btn {
-                font-size: 1rem;
-                margin-top: 1rem;
-            }
-
-            #hero-image {
-                height: 300px;
-            }
-
-            iframe {
-                width: 300px;
-                height: 350px;
-            }
-
-            #small-device-size {
-                display: none;
-            }
-
-            .sponsors {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 200px 200px;
-              }
-
-        }
-
-        /* Large */
-        @media (min-width: 1200px) {
-
-            p {
-                font-size: 1.5rem;
-                line-height: 1.5;
-            }
-
-            .header {
-                font-size: 1.5rem;
-                line-height: 1.5;
-            }
-
-            #hero-image {
-                height: 600px;
-            }
-
-            #small-device-size {
-                display: none;
-            }
-
-            .sponsors {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 200px 200px;
-              }
-        }
-
-        /******************************************
+/* Mobile device*/
+@media (min-width: 480px) and (max-width: 767px) {
+  p {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  a.link {
+    display: none;
+  }
+
+  .section-header {
+    font-size: 1rem;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+
+  div h1 {
+    font-size: small;
+    padding-top: 100px;
+    margin-bottom: -40px;
+  }
+
+  p.header-text {
+    font-size: 0.5rem;
+  }
+
+  .header {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .second-hero {
+    display: none;
+    flex: 0;
+  }
+
+  p#mission-paragraph {
+    flex: none;
+    margin: 0 auto;
+    width: 500px;
+    font-size: 0.8rem;
+    padding-right: 20px;
+  }
+
+  #mission-paragraph {
+    min-width: 360px;
+  }
+
+  strong.mission-text {
+    font-size: 1rem;
+  }
+
+  .event-title-link {
+    font-size: 1.5rem;
+  }
+
+  .event-info {
+    font-size: medium;
+  }
+
+  a.detail-btn {
+    font-size: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  #hero-image {
+    height: 300px;
+  }
+
+  iframe {
+    width: 300px;
+    height: 350px;
+  }
+
+  #large-device-size {
+    display: none;
+  }
+
+  .sponsors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+  }
+}
+
+/* tablet*/
+@media (min-width: 768px) and (max-width: 991px) {
+  p {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  a.link {
+    display: none;
+  }
+
+  .section-header {
+    font-size: 1rem;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+
+  div h1 {
+    font-size: small;
+    padding-top: 100px;
+    margin-bottom: -40px;
+  }
+
+  p.header-text {
+    font-size: 0.5rem;
+  }
+
+  .header {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .second-hero {
+    display: none;
+    flex: 0;
+  }
+
+  p#mission-paragraph {
+    flex: none;
+    margin: 0 auto;
+    width: 500px;
+    font-size: 0.8rem;
+    padding-right: 20px;
+  }
+
+  #mission-paragraph {
+    min-width: 360px;
+  }
+
+  strong.mission-text {
+    font-size: 1rem;
+  }
+
+  .event-title-link {
+    font-size: 1.5rem;
+  }
+
+  .event-info {
+    font-size: medium;
+  }
+
+  a.detail-btn {
+    font-size: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  #hero-image {
+    height: 300px;
+  }
+
+  iframe {
+    width: 300px;
+    height: 350px;
+  }
+
+  #small-device-size {
+    display: none;
+  }
+
+  .sponsors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+  }
+}
+/* Medium/Tablets */
+@media (min-width: 992px) and (max-width: 1199px) {
+  p {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  a.link {
+    display: none;
+  }
+
+  .section-header {
+    font-size: 1.5rem;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+
+  div h1 {
+    font-size: 1.5rem;
+    padding-top: 100px;
+    margin-bottom: -40px;
+  }
+
+  p.header-text {
+    font-size: 1rem;
+  }
+
+  .header {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .second-hero {
+    display: none;
+    flex: 0;
+  }
+
+  p#mission-paragraph {
+    flex: none;
+    margin: 0 auto;
+    width: 500px;
+    font-size: 1rem;
+    padding-right: 20px;
+  }
+
+  #mission-paragraph {
+    min-width: 360px;
+  }
+
+  strong.mission-text {
+    font-size: 1rem;
+  }
+
+  .event-title-link {
+    font-size: 1.5rem;
+  }
+
+  .event-info {
+    font-size: medium;
+  }
+
+  a.detail-btn {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  #hero-image {
+    height: 300px;
+  }
+
+  iframe {
+    width: 300px;
+    height: 350px;
+  }
+
+  #small-device-size {
+    display: none;
+  }
+
+  .sponsors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  .header {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  #hero-image {
+    height: 600px;
+  }
+
+  #small-device-size {
+    display: none;
+  }
+
+  .sponsors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+  }
+}
+
+/******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
