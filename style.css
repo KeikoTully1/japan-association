@@ -360,8 +360,11 @@ strong.mission-text {
   padding-left: 40px;
 }
 
-quote {
+blockquote {
   font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-top: 50px;
 }
 
 /* reference: https://www.youtube.com/watch?v=_R-TmN5kErE */
@@ -545,13 +548,7 @@ input[type="submit"]:hover {
 .logo-home {
   margin-right: 2rem;
   margin-top: 10px;
-}
-
-#logo-home,
-#logo-home2,
-#logo-home3 {
-  margin-right: 2rem;
-  margin-top: 10px;
+  width: 100px;
 }
 
 .footer-fc {
@@ -615,7 +612,8 @@ input[type="submit"]:hover {
 .event-header {
   color: black;
   font-size: xx-large;
-  padding-top: 550px;
+  padding-top: 600px;
+  margin: 0 auto;
 }
 
 .event-info {
