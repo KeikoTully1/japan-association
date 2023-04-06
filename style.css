@@ -54,7 +54,7 @@ ul {
   top: 0;
   left: 0;
   z-index: -1;
-  filter: brightness(0.80);
+  filter: brightness(0.8);
 }
 
 img.image-top {
@@ -716,6 +716,11 @@ p {
 
 /* Smaller mobile device*/
 @media (max-width: 479px) {
+  .logo-home {
+    margin-top: 10px;
+    margin-right: 50px;
+    width: 100px;
+  }
   .event-header {
     color: black;
     font-size: large;
@@ -740,7 +745,7 @@ p {
 
   div h1 {
     font-size: small;
-    padding-top: 200px;
+    padding-top: 100px;
     margin-bottom: -40px;
   }
 
@@ -760,10 +765,11 @@ p {
 
   p#mission-paragraph {
     flex: none;
-    margin: 0 auto;
-    width: 500px;
+    margin-left: -200px;
+    width: 400px;
     font-size: 0.8rem;
     padding-right: 20px;
+    padding-bottom: 20px;
   }
 
   #mission-paragraph {
@@ -799,7 +805,12 @@ p {
   .sponsors {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-rows: 150px 150px 150px;
+    margin-left: -60px;
+  }
+
+  .footer-contact {
+    font-size: 0.5rem;
   }
 }
 
@@ -849,8 +860,8 @@ p {
 
   p#mission-paragraph {
     flex: none;
-    margin: 0 auto;
-    width: 500px;
+    margin-left: -200px;
+    width: 400px;
     font-size: 0.8rem;
     padding-right: 20px;
   }
@@ -941,7 +952,7 @@ p {
 
   p#mission-paragraph {
     flex: none;
-    margin: 0 auto;
+    margin-left: -100px;
     width: 500px;
     font-size: 0.8rem;
     padding-right: 20px;
@@ -1086,8 +1097,7 @@ p {
 
 /* Large */
 @media (min-width: 1200px) {
-
-    .event-paragrah {
+  .event-paragrah {
     margin-right: 100px;
     max-width: 900px;
   }
