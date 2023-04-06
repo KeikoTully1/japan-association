@@ -54,7 +54,7 @@ ul {
   top: 0;
   left: 0;
   z-index: -1;
-  filter: brightness(1);
+  filter: brightness(0.80);
 }
 
 img.image-top {
@@ -1086,6 +1086,12 @@ p {
 
 /* Large */
 @media (min-width: 1200px) {
+
+    .event-paragrah {
+    margin-right: 100px;
+    max-width: 900px;
+  }
+
   p {
     font-size: 1.5rem;
     line-height: 1.5;
