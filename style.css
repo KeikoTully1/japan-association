@@ -782,9 +782,7 @@ p {
     font-size: 0.8rem;
     padding-right: 100px;
     padding-bottom: 20px;
-    display: cover;
-    max-width: 350px;
-    margin: 0 auto;
+    max-width: 410px;
     margin-left: -200px;
   }
 
