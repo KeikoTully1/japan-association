@@ -782,7 +782,8 @@ p {
     font-size: 0.8rem;
     padding-right: 100px;
     padding-bottom: 20px;
-    max-width: 250px;
+    display: cover;
+    max-width: 350px;
     margin: 0 auto;
     margin-left: -200px;
   }
@@ -889,9 +890,9 @@ p {
 
   p#mission-paragraph {
     flex: none;
-    width: 350px;
+    max-width: 400px;
     font-size: 0.8rem;
-    padding-right: 20px;
+    padding-right: 100px;
     margin: 0 auto;
     margin-left: -100px
   }
