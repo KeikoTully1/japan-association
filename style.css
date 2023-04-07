@@ -780,7 +780,7 @@ p {
   p#mission-paragraph {
     flex: none;
     font-size: 0.8rem;
-    padding-right: 30px;
+    padding-right: 100px;
     padding-bottom: 20px;
     max-width: 250px;
     margin: 0 auto;
