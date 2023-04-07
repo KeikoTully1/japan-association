@@ -276,7 +276,7 @@ a.event-title-link:active {
 }
 
 strong.mission-text {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .fc-about-us > * {
@@ -716,9 +716,21 @@ p {
 
 /* Smaller mobile device*/
 @media (max-width: 479px) {
+  .footer-fc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    background-color: black;
+    color: white;
+  }
+
   .logo-home {
     margin-top: 10px;
-    margin-right: 50px;
+    margin-right: 40px;
     width: 100px;
   }
   .event-header {
@@ -818,6 +830,22 @@ p {
 
 /* Mobile device*/
 @media (min-width: 480px) and (max-width: 767px) {
+  .footer-fc {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    background-color: black;
+    color: white;
+  }
+
+  .footer-contact {
+    font-size: 10px;
+  }
+
   .event-header {
     color: black;
     font-size: x-large;
@@ -913,6 +941,22 @@ p {
 
 /* tablet*/
 @media (min-width: 768px) and (max-width: 991px) {
+  .footer-fc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    background-color: black;
+    color: white;
+  }
+
+  .footer-contact {
+    font-size: 10px;
+    
+    
+  }
   .event-header {
     color: black;
     font-size: xx-large;
@@ -1006,6 +1050,21 @@ p {
 }
 /* Medium/Tablets */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .footer-contact {
+    font-size: 10px;
+  }
+
+    .footer-fc {
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    background-color: black;
+    color: white;
+  }
   .event-header {
     color: black;
     font-size: xx-large;
@@ -1105,6 +1164,22 @@ p {
 
 /* Large */
 @media (min-width: 1200px) {
+    .footer-contact {
+    font-size: 1rem;
+  }
+
+      .footer-fc {
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    background-color: black;
+    color: white;
+  }
+
   div h1 {
     position: relative;
     color: white;
