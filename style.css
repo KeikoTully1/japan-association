@@ -782,16 +782,9 @@ p {
     font-size: 0.8rem;
     padding-right: 30px;
     padding-bottom: 20px;
-    max-width: 280px;
+    max-width: 250px;
     margin: 0 auto;
     margin-left: -200px;
-  }
-
-    p#mission-paragraph {
-    flex: none;
-    width: 350px;
-    font-size: 0.8rem;
-    padding-right: 20px;
   }
 
   strong.mission-text {
