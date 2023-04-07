@@ -284,7 +284,7 @@ strong.mission-text {
 }
 
 #mission-paragraph {
-  min-width: 550px;
+  /* min-width: 550px; */
   background: #b0d2cb;
   padding-left: 30px;
   padding-right: 20px;
@@ -779,14 +779,19 @@ p {
 
   p#mission-paragraph {
     flex: none;
-    margin-left: -200px;
     font-size: 0.8rem;
-    padding-right: 20px;
+    padding-right: 30px;
     padding-bottom: 20px;
+    max-width: 280px;
+    margin: 0 auto;
+    margin-left: -200px;
   }
 
-  #mission-paragraph {
-    min-width: 360px;
+    p#mission-paragraph {
+    flex: none;
+    width: 350px;
+    font-size: 0.8rem;
+    padding-right: 20px;
   }
 
   strong.mission-text {
@@ -891,10 +896,11 @@ p {
 
   p#mission-paragraph {
     flex: none;
-    margin-left: -200px;
-    width: 400px;
+    width: 350px;
     font-size: 0.8rem;
     padding-right: 20px;
+    margin: 0 auto;
+    margin-left: -100px
   }
 
   #mission-paragraph {
@@ -1001,10 +1007,10 @@ p {
 
   p#mission-paragraph {
     flex: none;
-    margin-left: -100px;
-    width: 500px;
+    width: 400px;
     font-size: 0.8rem;
     padding-right: 20px;
+    margin: 0 auto;
   }
 
   #mission-paragraph {
