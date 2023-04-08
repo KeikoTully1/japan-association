@@ -741,8 +741,9 @@ p {
   }
 
   p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1;
+    max-width: 350px;
   }
 
   a.link {
@@ -852,6 +853,7 @@ p {
   p {
     font-size: 1rem;
     line-height: 1;
+    max-width: 400px;
   }
 
   a.link {
@@ -892,7 +894,7 @@ p {
     font-size: 0.8rem;
     padding-right: 100px;
     margin: 0 auto;
-    margin-left: -100px
+    margin-left: -100px;
   }
 
   #mission-paragraph {
@@ -951,8 +953,6 @@ p {
 
   .footer-contact {
     font-size: 10px;
-    
-    
   }
   .event-header {
     color: black;
@@ -1051,9 +1051,9 @@ p {
     font-size: 10px;
   }
 
-    .footer-fc {
+  .footer-fc {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -1161,13 +1161,13 @@ p {
 
 /* Large */
 @media (min-width: 1200px) {
-    .footer-contact {
+  .footer-contact {
     font-size: 1rem;
   }
 
-      .footer-fc {
+  .footer-fc {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
