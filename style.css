@@ -730,8 +730,7 @@ p {
 
   .logo-home {
     margin-top: 10px;
-    margin-right: 40px;
-    width: 100px;
+    width: 60px;
   }
   .event-header {
     color: black;
@@ -827,6 +826,11 @@ p {
 
 /* Mobile device*/
 @media (min-width: 480px) and (max-width: 767px) {
+  .logo-home {
+    margin-top: 10px;
+    width: 80px;
+  }
+
   .footer-fc {
     display: flex;
     justify-content: flex-end;
