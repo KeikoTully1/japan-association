@@ -496,8 +496,7 @@ figure {
 }
 
 #sponsor4 {
-  width: 170px;
-  /* height:auto; */
+  width: 160px;
 }
 
 #sponsor5 {
@@ -506,8 +505,8 @@ figure {
 }
 
 #sponsor6 {
-  width: 115px;
-  height: 62px;
+  width: 100px;
+  height: 60px;
 }
 
 /* reference https://www.w3schools.com/howto/howto_css_newsletter.asp */
@@ -714,8 +713,13 @@ p {
   font-size: 1.25rem;
 }
 
+  body {
+    min-height: 100vh;
+  }
+
 /* Smaller mobile device*/
 @media (max-width: 479px) {
+
   #about-us-header {
     display: inline-block;
     margin-top: -100px;
@@ -746,8 +750,9 @@ p {
 
   p {
     font-size: 0.8rem;
-    line-height: 1;
     max-width: 350px;
+    line-height: 1.5rem;
+    padding-top: 10px;
   }
 
   a.link {
@@ -820,7 +825,7 @@ p {
   .sponsors {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 150px 150px 150px;
+    grid-template-rows: 130px 130px 130px;
     margin-left: -60px;
   }
 
@@ -866,8 +871,8 @@ p {
 
   p {
     font-size: 1rem;
-    line-height: 1;
     max-width: 380px;
+    line-height: 1.5rem;
   }
 
   a.link {
@@ -948,7 +953,7 @@ p {
   .sponsors {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-rows: 180px 180px 180px;
   }
 }
 
