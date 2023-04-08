@@ -716,6 +716,11 @@ p {
 
 /* Smaller mobile device*/
 @media (max-width: 479px) {
+  #about-us-header {
+    display: inline-block;
+    margin-top: -100px;
+  }
+
   .footer-fc {
     display: flex;
     justify-content: center;
@@ -826,6 +831,11 @@ p {
 
 /* Mobile device*/
 @media (min-width: 480px) and (max-width: 767px) {
+  #about-us-header {
+    display: inline-block;
+    margin-top: -100px;
+  }
+
   .logo-home {
     margin-top: 10px;
     width: 60px;
@@ -944,6 +954,11 @@ p {
 
 /* tablet*/
 @media (min-width: 768px) and (max-width: 991px) {
+  #about-us-header {
+    display: inline-block;
+    margin-top: -90px;
+  }
+
   .logo-home {
     margin-top: 10px;
     width: 80px;
@@ -1056,6 +1071,11 @@ p {
 }
 /* Medium/Tablets */
 @media (min-width: 992px) and (max-width: 1199px) {
+  #about-us-header {
+    display: inline-block;
+    margin-top: -90px;
+  }
+
   .footer-contact {
     font-size: 10px;
   }
