@@ -853,7 +853,7 @@ p {
   p {
     font-size: 1rem;
     line-height: 1;
-    max-width: 400px;
+    max-width: 380px;
   }
 
   a.link {
@@ -961,8 +961,8 @@ p {
     margin: 0 auto;
   }
   p {
-    font-size: 1rem;
-    line-height: 1;
+    font-size: 1.5rem;
+    line-height: 1.5;
   }
 
   a.link {
@@ -1074,8 +1074,8 @@ p {
   }
 
   p {
-    font-size: 1rem;
-    line-height: 1;
+    font-size: 1.5rem;
+    line-height: 1.5;
   }
 
   a.link {
